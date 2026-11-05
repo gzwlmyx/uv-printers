@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Product image placeholder">
+  <defs>
+    <radialGradient id="pg" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#E7DCC8"/>
+    </radialGradient>
+    <pattern id="pl" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 0v24M0 12h24" stroke="#A98B4E" stroke-opacity=".18" stroke-width=".6"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#pg)"/>
+  <rect width="400" height="300" fill="url(#pl)"/>
+  <g fill="none" stroke="#A98B4E" stroke-opacity=".55" stroke-width="1">
+    <rect x="96" y="92" width="208" height="116" rx="2"/>
+    <path d="M96 140h208M150 92v48M250 92v48"/>
+  </g>
+  <g fill="#45403A" opacity=".55">
+    <rect x="126" y="158" width="148" height="30" rx="1"/>
+    <rect x="112" y="188" width="176" height="20" rx="1"/>
+  </g>
+  <circle cx="176" cy="173" r="7" fill="#A6322A" opacity=".6"/>
+  <text x="200" y="240" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="15" letter-spacing="3" fill="#7A7267">NOCAI · UV PRINTER</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="paper grain">
+  <!-- 宣纸 grain: stitched fractal-noise speckles + faint fibres. Tiles on both axes. -->
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency="1.15" numOctaves="2" seed="11" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.106  0 0 0 0 0.102  0 0 0 0 0.090  0.24 0.24 0.24 0 -0.320"/>
+    </filter>
+  </defs>
+  <rect width="200" height="200" filter="url(#grain)" opacity=".42"/>
+  <g fill="none" stroke="#6B6359" stroke-width="0.55" stroke-linecap="round" opacity=".06">
+    <path d="M-2 26C48 23.5 96 29 202 26"/>
+    <path d="M-2 58C52 61 104 55 202 58"/>
+    <path d="M-2 91C60 88.5 132 94 202 91"/>
+    <path d="M-2 124C46 127 110 121 202 124"/>
+    <path d="M-2 157C58 154 118 160 202 157"/>
+    <path d="M-2 183C64 181 128 185 202 183"/>
+  </g>
+  <g fill="none" stroke="#8A8279" stroke-width="0.5" stroke-linecap="round" opacity=".045">
+    <path d="M18 14C34 40 28 72 40 96S58 156 52 190"/>
+    <path d="M112 8C126 36 118 70 130 96S148 152 140 194"/>
+    <path d="M172 12C186 44 176 78 188 104S198 158 192 196"/>
+  </g>
+</svg>

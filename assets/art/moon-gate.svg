@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520"
+     color="#1B1A17" fill="none" stroke="currentColor" stroke-width="1.5"
+     stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="moon gate frame">
+  <!-- 月洞门 / arched picture frame. Bottom edge intentionally left open. -->
+  <path d="M40 500V250a160 160 0 0 1 320 0v250"/>
+  <path d="M54 500V250a146 146 0 0 1 292 0v250"/>
+  <path d="M26 500h30M344 500h30"/>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gzwlmyx.github.io/uv-printers/sitemap.xml

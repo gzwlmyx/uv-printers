@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="INKSTONE mark">
+<g>
+<path d="M 6.00 2.00 C 22.36 0.95 40.55 2.50 58.00 2.00 Q 62.00 2.00 62.00 6.00 C 61.02 22.63 61.28 41.54 62.00 58.00 Q 62.00 62.00 58.00 62.00 C 39.37 62.65 23.60 61.02 6.00 62.00 Q 2.00 62.00 2.00 58.00 C 2.10 40.18 1.76 24.50 2.00 6.00 Q 2.00 2.00 6.00 2.00 Z" fill="#A6322A"/>
+<ellipse cx="36.5" cy="16.8" rx="17.3" ry="14.2" fill="#C14537" opacity=".13"/>
+<ellipse cx="39.6" cy="37.7" rx="24.7" ry="12.9" fill="#C14537" opacity=".13"/>
+<ellipse cx="29.5" cy="17.0" rx="16.6" ry="17.1" fill="#C14537" opacity=".13"/>
+<path d="M 8.50 7.00 C 23.72 6.48 39.64 7.72 55.50 7.00 Q 57.00 7.00 57.00 8.50 C 56.99 24.88 56.28 40.01 57.00 55.50 Q 57.00 57.00 55.50 57.00 C 40.14 57.04 24.81 57.69 8.50 57.00 Q 7.00 57.00 7.00 55.50 C 6.77 38.62 7.46 23.34 7.00 8.50 Q 7.00 7.00 8.50 7.00 Z" fill="none" stroke="#F7F1E6" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="32.0" y="46.0" font-family="'Noto Serif SC','Songti SC','STSong','Source Han Serif SC',serif" font-size="34" fill="#F7F1E6" text-anchor="middle">印</text>
+</g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="INKSTONE seal">
+<defs><mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+<path d="M 13.00 6.00 C 45.02 6.83 77.22 5.43 107.00 6.00 Q 114.00 6.00 114.00 13.00 C 114.72 45.51 114.44 74.93 114.00 107.00 Q 114.00 114.00 107.00 114.00 C 73.76 113.69 44.69 113.33 13.00 114.00 Q 6.00 114.00 6.00 107.00 C 6.00 74.55 6.94 45.22 6.00 13.00 Q 6.00 6.00 13.00 6.00 Z" fill="#fff"/>
+<ellipse cx="114.00" cy="36.46" rx="2.13" ry="3.62" transform="rotate(-4.0 114.00 36.46)" fill="#000"/>
+<ellipse cx="6.00" cy="50.86" rx="1.03" ry="1.75" transform="rotate(-1.1 6.00 50.86)" fill="#000"/>
+<ellipse cx="114.00" cy="42.06" rx="2.21" ry="3.84" transform="rotate(3.7 114.00 42.06)" fill="#000"/>
+<ellipse cx="6.00" cy="50.68" rx="0.67" ry="1.49" transform="rotate(-3.6 6.00 50.68)" fill="#000"/>
+<ellipse cx="29.65" cy="6.00" rx="2.44" ry="1.05" transform="rotate(2.3 29.65 6.00)" fill="#000"/>
+<ellipse cx="114.00" cy="72.15" rx="1.22" ry="2.79" transform="rotate(-3.2 114.00 72.15)" fill="#000"/>
+<ellipse cx="114.00" cy="67.25" rx="0.54" ry="1.76" transform="rotate(1.4 114.00 67.25)" fill="#000"/>
+<ellipse cx="24.41" cy="114.00" rx="2.93" ry="1.02" transform="rotate(-0.6 24.41 114.00)" fill="#000"/>
+<ellipse cx="114.00" cy="101.40" rx="0.72" ry="2.37" transform="rotate(-4.1 114.00 101.40)" fill="#000"/>
+<ellipse cx="6.00" cy="102.03" rx="1.19" ry="3.62" transform="rotate(6.0 6.00 102.03)" fill="#000"/>
+<ellipse cx="6.00" cy="44.79" rx="0.59" ry="1.72" transform="rotate(0.2 6.00 44.79)" fill="#000"/>
+<ellipse cx="6.00" cy="27.89" rx="0.64" ry="1.24" transform="rotate(3.4 6.00 27.89)" fill="#000"/>
+<ellipse cx="11.20" cy="114.00" rx="2.42" ry="1.02" transform="rotate(2.8 11.20 114.00)" fill="#000"/>
+<ellipse cx="6.00" cy="62.97" rx="1.11" ry="2.11" transform="rotate(2.0 6.00 62.97)" fill="#000"/>
+<ellipse cx="102.93" cy="6.00" rx="1.72" ry="0.95" transform="rotate(0.9 102.93 6.00)" fill="#000"/>
+<ellipse cx="20.14" cy="6.00" rx="1.38" ry="0.71" transform="rotate(1.9 20.14 6.00)" fill="#000"/>
+<ellipse cx="76.04" cy="114.00" rx="2.43" ry="1.13" transform="rotate(0.2 76.04 114.00)" fill="#000"/>
+<ellipse cx="26.34" cy="6.00" rx="3.90" ry="1.24" transform="rotate(4.8 26.34 6.00)" fill="#000"/>
+<ellipse cx="96.74" cy="114.00" rx="1.67" ry="0.84" transform="rotate(-4.8 96.74 114.00)" fill="#000"/>
+<ellipse cx="114.00" cy="30.36" rx="0.68" ry="1.60" transform="rotate(0.7 114.00 30.36)" fill="#000"/>
+<ellipse cx="114.00" cy="74.50" rx="0.86" ry="1.55" transform="rotate(-3.7 114.00 74.50)" fill="#000"/>
+<ellipse cx="50.70" cy="114.00" rx="4.05" ry="1.18" transform="rotate(-2.4 50.70 114.00)" fill="#000"/>
+<ellipse cx="72.04" cy="114.00" rx="1.91" ry="0.62" transform="rotate(-5.9 72.04 114.00)" fill="#000"/>
+<ellipse cx="97.09" cy="6.00" rx="2.83" ry="0.80" transform="rotate(-1.2 97.09 6.00)" fill="#000"/>
+</mask></defs>
+<g mask="url(#cut)">
+<path d="M 13.00 6.00 C 45.02 6.83 77.22 5.43 107.00 6.00 Q 114.00 6.00 114.00 13.00 C 114.72 45.51 114.44 74.93 114.00 107.00 Q 114.00 114.00 107.00 114.00 C 73.76 113.69 44.69 113.33 13.00 114.00 Q 6.00 114.00 6.00 107.00 C 6.00 74.55 6.94 45.22 6.00 13.00 Q 6.00 6.00 13.00 6.00 Z" fill="#A6322A"/>
+<ellipse cx="29.0" cy="30.5" rx="21.2" ry="13.8" fill="#C14537" opacity=".13"/>
+<ellipse cx="30.6" cy="57.1" rx="19.0" ry="14.1" fill="#C14537" opacity=".13"/>
+<ellipse cx="51.3" cy="87.4" rx="15.6" ry="13.9" fill="#C14537" opacity=".13"/>
+<path d="M 17.00 14.00 C 45.67 14.29 74.32 13.46 103.00 14.00 Q 106.00 14.00 106.00 17.00 C 105.98 46.23 105.96 74.54 106.00 103.00 Q 106.00 106.00 103.00 106.00 C 73.34 105.56 45.73 105.68 17.00 106.00 Q 14.00 106.00 14.00 103.00 C 14.31 74.28 14.66 46.18 14.00 17.00 Q 14.00 14.00 17.00 14.00 Z" fill="none" stroke="#F7F1E6" stroke-width="3" stroke-linejoin="round"/>
+<text x="60.0" y="57.0" font-family="'Noto Serif SC','Songti SC','STSong','Source Han Serif SC',serif" font-size="48" fill="#F7F1E6" text-anchor="middle">墨</text>
+<text x="60.0" y="103.0" font-family="'Noto Serif SC','Songti SC','STSong','Source Han Serif SC',serif" font-size="48" fill="#F7F1E6" text-anchor="middle">印</text>
+</g>
+</svg>

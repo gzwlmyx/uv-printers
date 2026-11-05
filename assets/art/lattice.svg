@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" color="#1B1A17" fill="none" stroke="currentColor" stroke-width="0.6" opacity=".5" role="img" aria-label="window lattice">
+<defs><g id="cell"><path d="M53.0 42.0 L97.0 42.0 L108.0 53.0 L108.0 97.0 L97.0 108.0 L53.0 108.0 L42.0 97.0 L42.0 53.0 Z M63.0 57.0 L87.0 57.0 L93.0 63.0 L93.0 87.0 L87.0 93.0 L63.0 93.0 L57.0 87.0 L57.0 63.0 Z M42 75H0 M108 75H150 M75 42V0 M75 108V150"/></g></defs>
+<path d="M0.5 0V600M0 0.5H600M150.5 0V600M0 150.5H600M300.5 0V600M0 300.5H600M450.5 0V600M0 450.5H600"/>
+<use href="#cell" x="0" y="0"/>
+<use href="#cell" x="150" y="0"/>
+<use href="#cell" x="300" y="0"/>
+<use href="#cell" x="450" y="0"/>
+<use href="#cell" x="0" y="150"/>
+<use href="#cell" x="150" y="150"/>
+<use href="#cell" x="300" y="150"/>
+<use href="#cell" x="450" y="150"/>
+<use href="#cell" x="0" y="300"/>
+<use href="#cell" x="150" y="300"/>
+<use href="#cell" x="300" y="300"/>
+<use href="#cell" x="450" y="300"/>
+<use href="#cell" x="0" y="450"/>
+<use href="#cell" x="150" y="450"/>
+<use href="#cell" x="300" y="450"/>
+<use href="#cell" x="450" y="450"/>
+</svg>

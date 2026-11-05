@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="NOCAI seal">
+<defs><mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+<path d="M 13.00 6.00 C 46.11 7.21 77.04 4.88 107.00 6.00 Q 114.00 6.00 114.00 13.00 C 114.25 44.75 114.08 74.98 114.00 107.00 Q 114.00 114.00 107.00 114.00 C 74.21 113.85 43.27 113.88 13.00 114.00 Q 6.00 114.00 6.00 107.00 C 4.72 73.92 6.57 43.81 6.00 13.00 Q 6.00 6.00 13.00 6.00 Z" fill="#fff"/>
+<ellipse cx="114.00" cy="75.63" rx="1.34" ry="2.64" transform="rotate(-0.3 114.00 75.63)" fill="#000"/>
+<ellipse cx="114.00" cy="73.27" rx="2.26" ry="4.27" transform="rotate(3.4 114.00 73.27)" fill="#000"/>
+<ellipse cx="76.33" cy="6.00" rx="3.20" ry="1.95" transform="rotate(3.2 76.33 6.00)" fill="#000"/>
+<ellipse cx="6.00" cy="46.70" rx="1.16" ry="2.16" transform="rotate(5.6 6.00 46.70)" fill="#000"/>
+<ellipse cx="93.78" cy="114.00" rx="2.53" ry="0.93" transform="rotate(1.7 93.78 114.00)" fill="#000"/>
+<ellipse cx="6.00" cy="69.82" rx="0.95" ry="3.10" transform="rotate(4.2 6.00 69.82)" fill="#000"/>
+<ellipse cx="6.00" cy="53.34" rx="1.05" ry="2.00" transform="rotate(5.4 6.00 53.34)" fill="#000"/>
+<ellipse cx="114.00" cy="103.10" rx="0.81" ry="2.08" transform="rotate(0.2 114.00 103.10)" fill="#000"/>
+<ellipse cx="20.74" cy="6.00" rx="1.67" ry="0.60" transform="rotate(3.3 20.74 6.00)" fill="#000"/>
+<ellipse cx="50.86" cy="6.00" rx="2.55" ry="0.80" transform="rotate(5.9 50.86 6.00)" fill="#000"/>
+<ellipse cx="94.73" cy="6.00" rx="1.93" ry="0.76" transform="rotate(-5.5 94.73 6.00)" fill="#000"/>
+<ellipse cx="6.00" cy="80.23" rx="0.97" ry="1.81" transform="rotate(-4.8 6.00 80.23)" fill="#000"/>
+<ellipse cx="114.00" cy="88.74" rx="1.27" ry="3.83" transform="rotate(-2.7 114.00 88.74)" fill="#000"/>
+<ellipse cx="6.00" cy="45.07" rx="0.88" ry="2.19" transform="rotate(-5.6 6.00 45.07)" fill="#000"/>
+<ellipse cx="25.89" cy="6.00" rx="1.01" ry="0.51" transform="rotate(5.5 25.89 6.00)" fill="#000"/>
+<ellipse cx="6.00" cy="14.26" rx="0.65" ry="1.87" transform="rotate(2.3 6.00 14.26)" fill="#000"/>
+<ellipse cx="6.00" cy="15.77" rx="1.28" ry="2.68" transform="rotate(-2.5 6.00 15.77)" fill="#000"/>
+<ellipse cx="17.54" cy="6.00" rx="4.04" ry="1.19" transform="rotate(4.1 17.54 6.00)" fill="#000"/>
+<ellipse cx="6.00" cy="64.47" rx="1.14" ry="2.63" transform="rotate(3.8 6.00 64.47)" fill="#000"/>
+<ellipse cx="74.56" cy="114.00" rx="2.35" ry="0.94" transform="rotate(-4.8 74.56 114.00)" fill="#000"/>
+<ellipse cx="114.00" cy="54.09" rx="0.74" ry="1.54" transform="rotate(1.1 114.00 54.09)" fill="#000"/>
+<ellipse cx="6.00" cy="50.38" rx="1.15" ry="3.51" transform="rotate(0.2 6.00 50.38)" fill="#000"/>
+</mask></defs>
+<g mask="url(#cut)">
+<path d="M 13.00 6.00 C 46.11 7.21 77.04 4.88 107.00 6.00 Q 114.00 6.00 114.00 13.00 C 114.25 44.75 114.08 74.98 114.00 107.00 Q 114.00 114.00 107.00 114.00 C 74.21 113.85 43.27 113.88 13.00 114.00 Q 6.00 114.00 6.00 107.00 C 4.72 73.92 6.57 43.81 6.00 13.00 Q 6.00 6.00 13.00 6.00 Z" fill="#A6322A"/>
+<ellipse cx="62.3" cy="66.9" rx="24.1" ry="21.0" fill="#C14537" opacity=".13"/>
+<ellipse cx="90.6" cy="49.2" rx="25.4" ry="16.2" fill="#C14537" opacity=".13"/>
+<ellipse cx="44.5" cy="27.6" rx="20.1" ry="13.5" fill="#C14537" opacity=".13"/>
+<path d="M 17.00 14.00 C 46.62 14.61 74.05 14.90 103.00 14.00 Q 106.00 14.00 106.00 17.00 C 105.45 46.55 105.27 75.08 106.00 103.00 Q 106.00 106.00 103.00 106.00 C 73.13 106.37 45.78 106.48 17.00 106.00 Q 14.00 106.00 14.00 103.00 C 13.89 74.42 14.88 44.69 14.00 17.00 Q 14.00 14.00 17.00 14.00 Z" fill="none" stroke="#F7F1E6" stroke-width="2.8" stroke-linejoin="round"/>
+<text x="60.0" y="69.0" font-family="'Noto Serif SC','Songti SC','STSong','Source Han Serif SC',serif" font-size="22" letter-spacing="0.8" fill="#F7F1E6" text-anchor="middle">NOCAI</text>
+</g>
+</svg>
