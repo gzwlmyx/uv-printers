@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-title-en="How a piezo printhead forms a droplet | INKSTONE STUDIO" data-title-zh="压电喷头是怎么把墨滴「挤」出来的 | 墨印工坊" data-desc-en="A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all " data-desc-zh="压电喷头不是靠加热或气压喷墨，而是让压电元件变形、在墨腔内产生压力波把墨滴推出喷嘴。墨滴大小、灰度级和网点扩大都来自驱动波形——所以同样型号的喷头，两台机器印出来可以不一样。">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.remove('no-js');try{var l=localStorage.getItem('lang');if(l==='zh'){document.documentElement.lang='zh-CN';document.documentElement.setAttribute('data-lang','zh');}}catch(e){}</script>
+<title>How a piezo printhead forms a droplet | INKSTONE STUDIO</title>
+<meta name="description" content="A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all ">
+<meta name="theme-color" content="#F4EEE2">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="INKSTONE STUDIO">
+<meta property="og:title" content="How a piezo printhead forms a droplet | INKSTONE STUDIO">
+<meta property="og:description" content="A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all ">
+<meta property="og:url" content="https://gzwlmyx.github.io/uv-printers/tech/piezo-droplet-formation/">
+<link rel="canonical" href="https://gzwlmyx.github.io/uv-printers/tech/piezo-droplet-formation/">
+<meta property="og:image" content="https://gzwlmyx.github.io/uv-printers/assets/img/tech/piezo-droplet.svg">
+<meta property="og:image:alt" content="How a piezo printhead forms a droplet | INKSTONE STUDIO">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/art/favicon.svg">
+<link rel="preload" href="../../assets/fonts/cormorant_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/inter_400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/pages.css">
+<link rel="stylesheet" href="../../assets/css/tech.css">
+<noscript><style>.reveal,.reveal-stagger>*{opacity:1 !important;transform:none !important}</style></noscript>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How a piezo printhead forms a droplet", "description": "A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all come from that waveform, which is why two machines with the same head can print differently.", "articleSection": "Principles", "inLanguage": "en", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "author": {"@type": "Organization", "name": "INKSTONE STUDIO"}, "publisher": {"@type": "Organization", "name": "INKSTONE STUDIO"}, "keywords": "piezo, Epson i3200, Epson i1600, grey-scale, drop size", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://gzwlmyx.github.io/uv-printers/tech/piezo-droplet-formation/"}}</script>
+
+</head>
+<body class="page-article" data-page="article">
+<a class="skip-link" href="#main"><span data-en="Skip to content" data-zh="跳到主要内容">Skip to content</span></a>
+<header class="header" id="site-header">
+  <div class="header__inner">
+    <a class="brand" href="../../index.html" aria-label="INKSTONE STUDIO — Home" data-aria-en="INKSTONE STUDIO — Home" data-aria-zh="墨印工坊 — 首页">
+      <span class="brand__seal"><img src="../../assets/art/seal-inkstone.svg" alt="INKSTONE STUDIO" width="38" height="38"></span>
+      <span class="brand__text">
+        <span class="brand__name" data-en="INKSTONE" data-zh="墨印工坊">INKSTONE</span>
+        <span class="brand__sub" data-en="STUDIO" data-zh="数码印刷笔记">STUDIO</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary" data-aria-en="Primary" data-aria-zh="主导航">
+      <a href="../../products/index.html" data-en="Products" data-zh="产品">Products</a>
+      <a href="../../tech/index.html" aria-current="page" data-en="Tech" data-zh="技术">Tech</a>
+      <a href="../../index.html#cases" data-en="Cases" data-zh="案例">Cases</a>
+      <a href="../../downloads/index.html" data-en="Downloads" data-zh="下载">Downloads</a>
+      <a href="../../company/index.html" data-en="About" data-zh="关于">About</a>
+      <a href="../../contact/index.html" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Language" data-aria-en="Language" data-aria-zh="语言">
+        <button type="button" class="lang__btn is-active" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <span class="lang__sep" aria-hidden="true">|</span>
+        <button type="button" class="lang__btn" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="../../contact/index.html"><span data-en="Get a Quote" data-zh="获取报价">Get a Quote</span></a>
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-label="Open menu" data-aria-en="Open menu" data-aria-zh="打开菜单" aria-expanded="false" aria-controls="site-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="site-drawer" aria-hidden="true" aria-label="Menu" data-aria-en="Menu" data-aria-zh="菜单">
+  <nav class="drawer__nav" aria-label="Mobile" data-aria-en="Mobile" data-aria-zh="移动导航">
+    <a href="../../products/index.html"><span data-en="Products" data-zh="产品">Products</span><small aria-hidden="true">01</small></a>
+    <a href="../../tech/index.html"><span data-en="Tech" data-zh="技术">Tech</span><small aria-hidden="true">02</small></a>
+    <a href="../../index.html#cases"><span data-en="Cases" data-zh="案例">Cases</span><small aria-hidden="true">03</small></a>
+    <a href="../../downloads/index.html"><span data-en="Downloads" data-zh="下载">Downloads</span><small aria-hidden="true">04</small></a>
+    <a href="../../company/index.html"><span data-en="About" data-zh="关于">About</span><small aria-hidden="true">05</small></a>
+    <a href="../../contact/index.html"><span data-en="Contact" data-zh="联系">Contact</span><small aria-hidden="true">06</small></a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+8615920122366">+86 159 2012 2366</a>
+    <br>
+    <span data-en="Guangzhou, China · Mon–Sat 8:30am–6:00pm (GMT+8)" data-zh="中国广州 · 周一至周六 8:30–18:00（北京时间）">Guangzhou, China · Mon–Sat 8:30am–6:00pm (GMT+8)</span>
+  </div>
+</div>
+
+<main id="main">
+<article class="ta-article">
+  <section class="page-hero tech-hero ta-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb" data-aria-en="Breadcrumb" data-aria-zh="面包屑">
+        <a href="../../index.html" data-en="Home" data-zh="首页">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="../../tech/index.html" data-en="Tech" data-zh="技术">Tech</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span aria-current="page" data-en="How a piezo printhead forms a droplet" data-zh="压电喷头是怎么把墨滴「挤」出来的">How a piezo printhead forms a droplet</span>
+      </nav>
+      <p class="ta-kicker">
+        <span class="ta-cat" data-en="Principles" data-zh="原理">Principles</span>
+        <span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span>
+        <span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span>
+        <span class="ta-mono" data-en="Updated 2026-11" data-zh="更新于 2026-11">Updated 2026-11</span>
+      </p>
+      <h1 data-en="How a piezo printhead forms a droplet" data-zh="压电喷头是怎么把墨滴「挤」出来的">How a piezo printhead forms a droplet</h1>
+      <p class="lead" data-en="A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all come from that waveform, which is why two machines with the same head can print differently." data-zh="压电喷头不是靠加热或气压喷墨，而是让压电元件变形、在墨腔内产生压力波把墨滴推出喷嘴。墨滴大小、灰度级和网点扩大都来自驱动波形——所以同样型号的喷头，两台机器印出来可以不一样。">A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all come from that waveform, which is why two machines with the same head can print differently.</p>
+      <ul class="ta-tags"><li class="ta-tag" data-en="piezo" data-zh="压电">piezo</li><li class="ta-tag" data-en="Epson i3200" data-zh="爱普生 i3200">Epson i3200</li><li class="ta-tag" data-en="Epson i1600" data-zh="爱普生 i1600">Epson i1600</li><li class="ta-tag" data-en="grey-scale" data-zh="灰度">grey-scale</li><li class="ta-tag" data-en="drop size" data-zh="墨滴大小">drop size</li></ul>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap ta-layout">
+      <div class="ta-main">
+        <div class="ta-body">
+<p class="ta-p" data-en="The short answer: a piezo printhead fires by deforming a small ink chamber. A voltage pulse bends a piezo element, the chamber volume changes, and the pressure wave pushes a droplet out of the nozzle. Change the pulse shape and you change the droplet. That single fact explains most of the differences between &#x27;the same head&#x27; on two different machines." data-zh="先说结论：压电喷头靠「让墨腔变形」来喷墨。电压脉冲使压电元件弯曲，墨腔体积变化，压力波把墨滴从喷嘴推出去。脉冲波形一变，墨滴就变。这一条解释了为什么「同一只喷头」装在两台机器上，效果可以差很多。">The short answer: a piezo printhead fires by deforming a small ink chamber. A voltage pulse bends a piezo element, the chamber volume changes, and the pressure wave pushes a droplet out of the nozzle. Change the pulse shape and you change the droplet. That single fact explains most of the differences between &#x27;the same head&#x27; on two different machines.</p>
+<h2 class="ta-h2" data-en="One droplet, in four steps" data-zh="一颗墨滴的四个步骤">One droplet, in four steps</h2>
+<ol class="ta-list"><li data-en="Rest: the meniscus sits at the nozzle with a slight negative pressure holding it back." data-zh="静止：弯月面停在喷嘴口，靠轻微负压托住墨水。">Rest: the meniscus sits at the nozzle with a slight negative pressure holding it back.</li><li data-en="Pulse: the piezo element deforms, the chamber contracts, and pressure rises behind the ink." data-zh="脉冲：压电元件变形，墨腔收缩，墨水后方压力升高。">Pulse: the piezo element deforms, the chamber contracts, and pressure rises behind the ink.</li><li data-en="Ejection: a droplet breaks off; a long tail follows and must break cleanly, or it leaves satellites." data-zh="喷出：墨滴断裂飞出；后面拖着一段墨尾，必须干净断开，否则会留下卫星点。">Ejection: a droplet breaks off; a long tail follows and must break cleanly, or it leaves satellites.</li><li data-en="Refill: the chamber refills through the restrictor and the meniscus settles before the next pulse." data-zh="回填：墨腔经限流通道重新充满，弯月面稳定后再打下一发。">Refill: the chamber refills through the restrictor and the meniscus settles before the next pulse.</li></ol>
+<p class="ta-p" data-en="The refill step is where speed and reliability are won or lost. Fire too fast and the chamber has not refilled; fire with the wrong waveform and the tail breaks in the wrong place. This is also why ink temperature matters: warmer ink is thinner, refills faster and forms a different droplet at the same voltage." data-zh="回填这一步决定了速度与可靠性。打得太快，墨腔还没充满；波形不对，墨尾在错误的位置断开。墨温也会影响结果：温度高的墨水更稀、回填更快，同样电压下形成的墨滴不一样。">The refill step is where speed and reliability are won or lost. Fire too fast and the chamber has not refilled; fire with the wrong waveform and the tail breaks in the wrong place. This is also why ink temperature matters: warmer ink is thinner, refills faster and forms a different droplet at the same voltage.</p>
+<h2 class="ta-h2" data-en="Grey-scale: one nozzle, several droplet sizes" data-zh="灰度：一只喷嘴，几种墨滴">Grey-scale: one nozzle, several droplet sizes</h2>
+<p class="ta-p" data-en="Modern heads fire more than one drop size from the same nozzle by using multi-pulse waveforms. The Epson i3200-U1 and i1600-U1 in our flatbeds are specified with 3.8 / 6.2 / 9.3 pl at 21.6 kHz in four-level mode, and 5 pl at 43.2 kHz in two-level mode. Smaller drops build smooth gradients and fine detail; larger drops fill solids quickly. The RIP decides which level to use, which is why print quality is never only about the head." data-zh="现代喷头用多脉冲波形，让同一只喷嘴打出不同大小的墨滴。我们平板机上的爱普生 i3200-U1 与 i1600-U1，四电平模式下标称 3.8／6.2／9.3 pl、21.6 kHz，两电平模式为 5 pl、43.2 kHz。小墨滴做渐变与细节，大墨滴快速填实色。用哪一档由 RIP 决定，所以画质从来不只是喷头的事。">Modern heads fire more than one drop size from the same nozzle by using multi-pulse waveforms. The Epson i3200-U1 and i1600-U1 in our flatbeds are specified with 3.8 / 6.2 / 9.3 pl at 21.6 kHz in four-level mode, and 5 pl at 43.2 kHz in two-level mode. Smaller drops build smooth gradients and fine detail; larger drops fill solids quickly. The RIP decides which level to use, which is why print quality is never only about the head.</p>
+<div class="ta-table-wrap"><table class="ta-table"><thead><tr><th data-en="Printhead" data-zh="喷头">Printhead</th><th data-en="Nozzles" data-zh="喷嘴数">Nozzles</th><th data-en="Print width" data-zh="打印宽度">Print width</th><th data-en="Droplet / grey levels" data-zh="墨滴／灰度">Droplet / grey levels</th></tr></thead><tbody><tr><td data-en="Epson i3200-U1" data-zh="爱普生 i3200-U1">Epson i3200-U1</td><td data-en="3,200" data-zh="3,200">3,200</td><td data-en="33.8 mm" data-zh="33.8 mm">33.8 mm</td><td data-en="3.8 / 6.2 / 9.3 / 12.5 pl class; multi-level" data-zh="3.8／6.2／9.3／12.5 pl 级别；多电平">3.8 / 6.2 / 9.3 / 12.5 pl class; multi-level</td></tr><tr><td data-en="Epson i1600-U1" data-zh="爱普生 i1600-U1">Epson i1600-U1</td><td data-en="1,600" data-zh="1,600">1,600</td><td data-en="33.8 mm" data-zh="33.8 mm">33.8 mm</td><td data-en="Same drop levels as i3200-U1; 4 rows" data-zh="墨滴档位与 i3200-U1 相同；4 列">Same drop levels as i3200-U1; 4 rows</td></tr><tr><td data-en="Ricoh GEN6" data-zh="理光 GEN6">Ricoh GEN6</td><td data-en="1,280" data-zh="1,280">1,280</td><td data-en="54.1 mm" data-zh="54.1 mm">54.1 mm</td><td data-en="5 pl, 4-level grey, 50 kHz class" data-zh="5 pl，4 级灰度，50 kHz 级">5 pl, 4-level grey, 50 kHz class</td></tr></tbody></table></div>
+<figure class="ta-figure"><img src="../../assets/img/tech/piezo-droplet.svg" alt="A voltage pulse deforms the chamber; the pressure wave ejects a droplet, and the waveform shape sets its size." data-alt-en="A voltage pulse deforms the chamber; the pressure wave ejects a droplet, and the waveform shape sets its size." data-alt-zh="电压脉冲让墨腔变形，压力波把墨滴推出；波形决定墨滴大小。" loading="lazy" decoding="async"><figcaption><span class="ta-figure__num">FIG. 01</span><span class="ta-figure__cap" data-en="A voltage pulse deforms the chamber; the pressure wave ejects a droplet, and the waveform shape sets its size." data-zh="电压脉冲让墨腔变形，压力波把墨滴推出；波形决定墨滴大小。">A voltage pulse deforms the chamber; the pressure wave ejects a droplet, and the waveform shape sets its size.</span></figcaption></figure>
+<h2 class="ta-h2" data-en="From droplet to dot on the substrate" data-zh="从墨滴到材料上的网点">From droplet to dot on the substrate</h2>
+<p class="ta-p" data-en="A 5 pl droplet does not stay 5 pl on the surface. It spreads, and how far it spreads depends on surface energy, ink viscosity, head height and whether the ink was pinned by a pre-cure lamp. That spread is dot gain. If dot gain changes — a new media batch, a colder room, a different white ink — the same file prints lighter or darker, and the operator blames the profile." data-zh="5 pl 的墨滴落到材料上就不再是 5 pl：它会铺开，铺开的程度取决于表面能、墨水黏度、喷头高度以及有没有被预固化灯「钉住」。这个铺开就是网点扩大。网点扩大一变——换了一批材料、车间变冷、白墨换了——同一个文件就会变浅或变深，操作员往往去怪曲线。">A 5 pl droplet does not stay 5 pl on the surface. It spreads, and how far it spreads depends on surface energy, ink viscosity, head height and whether the ink was pinned by a pre-cure lamp. That spread is dot gain. If dot gain changes — a new media batch, a colder room, a different white ink — the same file prints lighter or darker, and the operator blames the profile.</p>
+<aside class="ta-note"><span class="ta-note__tag" data-en="Field note" data-zh="现场笔记">Field note</span><p class="ta-note__text" data-en="Workshop note: when a print looks grainy in the highlights but fine in the solids, we look at the small-drop levels first. A partially clogged nozzle that still fires the big drop will pass a nozzle check and still ruin a gradient. Printing a 5 % and a 20 % patch tells you more than the nozzle check alone." data-zh="现场笔记：高光发粗、实色却正常时，我们先查小墨滴档位。某只喷嘴轻微堵塞、大墨滴还能打，喷嘴检查图看着没问题，渐变却已经废了。打一块 5% 和一块 20% 的网点了，比只看喷嘴检查图有用。">Workshop note: when a print looks grainy in the highlights but fine in the solids, we look at the small-drop levels first. A partially clogged nozzle that still fires the big drop will pass a nozzle check and still ruin a gradient. Printing a 5 % and a 20 % patch tells you more than the nozzle check alone.</p></aside>
+<p class="ta-p" data-en="The takeaway for buyers is that printhead model is only the start of the specification. Nozzle count and native resolution describe the hardware; waveform, ink and RIP decide what actually lands on the substrate. When comparing two machines with the same head, compare the samples, not the datasheet line." data-zh="对买家来说，喷头型号只是规格的起点。喷嘴数和物理分辨率描述的是硬件；波形、墨水和 RIP 才决定最终落在材料上的东西。两台用同款喷头的机器做比较时，比样张，不要只比参数表那一行。">The takeaway for buyers is that printhead model is only the start of the specification. Nozzle count and native resolution describe the hardware; waveform, ink and RIP decide what actually lands on the substrate. When comparing two machines with the same head, compare the samples, not the datasheet line.</p>
+        </div>
+        <nav class="ta-pn" aria-label="Article navigation" data-aria-en="Article navigation" data-aria-zh="文章导航">
+<a class="ta-pn__link" href="../../tech/uv-curing-principle/index.html"><span class="ta-pn__dir" data-en="Previous" data-zh="上一篇">Previous</span><span class="ta-pn__title" data-en="How UV ink actually cures" data-zh="UV 墨水到底是怎么固化的">How UV ink actually cures</span></a>
+<a class="ta-pn__link ta-pn__link--next" href="../../tech/white-ink-on-dark/index.html"><span class="ta-pn__dir" data-en="Next" data-zh="下一篇">Next</span><span class="ta-pn__title" data-en="Why dark and clear materials need white ink" data-zh="深色和透明材料为什么必须打白墨">Why dark and clear materials need white ink</span></a>
+        </nav>
+      </div>
+      <aside class="ta-aside">
+<div class="ta-aside__block"><h2 class="ta-aside__h" data-en="Machines in this note" data-zh="本文涉及机型">Machines in this note</h2><div class="ta-machines"><a class="ta-machine" href="../../products/nc-uv0406-vi/index.html"><span class="ta-mono">NC-UV0406-VI</span><small data-en="Multifunctional Small Digital Inkjet Printer" data-zh="多功能小型数码喷墨打印机">Multifunctional Small Digital Inkjet Printer</small></a>
+<a class="ta-machine" href="../../products/nc-uv0609peiii-ii/index.html"><span class="ta-mono">NC-UV0609PEIII-II</span><small data-en="High Cost Performance Digital Inkjet Printer" data-zh="高性价比数码喷墨打印机">High Cost Performance Digital Inkjet Printer</small></a>
+<a class="ta-machine" href="../../products/nc-cylinder-elf-iv-d/index.html"><span class="ta-mono">NC-CylinderElf-IV-D</span><small data-en="Industrial Rotary UV Printer (6 Heads)" data-zh="工业级圆柱 UV 打印机（六喷头）">Industrial Rotary UV Printer (6 Heads)</small></a></div></div>
+<div class="ta-aside__block"><h2 class="ta-aside__h" data-en="Read next" data-zh="接着读">Read next</h2><div class="ta-related"><a class="ta-related__item" href="../../tech/uv-curing-principle/index.html"><span class="ta-related__cat" data-en="Principles" data-zh="原理">Principles</span><span class="ta-related__title" data-en="How UV ink actually cures" data-zh="UV 墨水到底是怎么固化的">How UV ink actually cures</span></a>
+<a class="ta-related__item" href="../../tech/pass-lines-banding/index.html"><span class="ta-related__cat" data-en="Maintenance" data-zh="维护">Maintenance</span><span class="ta-related__title" data-en="Pass lines and banding: find the cause before you touch the profile" data-zh="pass 道与深浅条带：先找原因，再动曲线">Pass lines and banding: find the cause before you touch the profile</span></a>
+<a class="ta-related__item" href="../../tech/color-shift-density/index.html"><span class="ta-related__cat" data-en="Maintenance" data-zh="维护">Maintenance</span><span class="ta-related__title" data-en="When the colour drifts: check the machine before the ICC" data-zh="颜色变了：先查机器，再动 ICC">When the colour drifts: check the machine before the ICC</span></a></div></div>
+<div class="ta-aside__block ta-source"><h2 class="ta-aside__h" data-en="Sources" data-zh="资料来源">Sources</h2><p data-en="Nozzle counts, print widths and drop specifications are taken from Epson i3200/i1600 datasheets and the Ricoh GEN6 physical data used in our internal printhead reference; explanations of waveform, refill and dot gain are standard inkjet theory. &#x27;pl class&#x27; signals that drop size depends on the waveform and ink, not only the head." data-zh="喷嘴数、打印宽度与墨滴档位来自爱普生 i3200／i1600 官方数据表及内部喷头资料中的理光 GEN6 物理参数；波形、回填与网点扩大的解释属喷墨通用理论。「pl 级别」表示墨滴大小还取决于波形与墨水，不只是喷头本身。">Nozzle counts, print widths and drop specifications are taken from Epson i3200/i1600 datasheets and the Ricoh GEN6 physical data used in our internal printhead reference; explanations of waveform, refill and dot gain are standard inkjet theory. &#x27;pl class&#x27; signals that drop size depends on the waveform and ink, not only the head.</p></div>
+      </aside>
+    </div>
+  </section>
+</article>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="brand__seal"><img src="../../assets/art/seal-inkstone.svg" alt="INKSTONE STUDIO" width="38" height="38"></span>
+          <span class="brand__text">
+            <span class="brand__name" data-en="INKSTONE" data-zh="墨印工坊">INKSTONE</span>
+            <span class="brand__sub" data-en="STUDIO · GUANGZHOU" data-zh="工坊 · 广州">STUDIO · GUANGZHOU</span>
+          </span>
+        </div>
+        <p class="footer__desc" data-en="A personal notebook of digital inkjet printing — UV flatbed, rotary, roll-to-roll and onepass machines built in Guangzhou, with the specs and brochures that actually matter." data-zh="数码喷墨设备的个人资料库 —— UV 平板、360° 圆柱、卷材与 Onepass，附真实参数与彩页，全部来自广州制造。">Digital inkjet printers designed and built in Guangzhou — UV flatbed, rotary, roll-to-roll, onepass and 3D. Seventeen years of printing craft, shipped to more than sixty countries.</p>
+        <div class="footer__social"></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Products" data-zh="产品">Products</p>
+        <div class="footer__links"><a href="../../products/index.html" data-en="All products" data-zh="全部产品">All products</a>
+<a href="../../products/index.html#cat-uv-flatbed" data-en="UV Flatbed Printers" data-zh="UV 平板打印机">UV Flatbed Printers</a>
+<a href="../../products/index.html#cat-rotary" data-en="360° Rotary UV Printers" data-zh="360° 圆柱 UV 打印机">360° Rotary UV Printers</a>
+<a href="../../products/index.html#cat-roll-to-roll" data-en="Roll-to-Roll &amp; UV DTF Printers" data-zh="卷材与 UV DTF 打印机">Roll-to-Roll &amp; UV DTF Printers</a>
+<a href="../../products/index.html#cat-onepass" data-en="Onepass High-Speed Printers" data-zh="Onepass 高速打印机">Onepass High-Speed Printers</a></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Studio" data-zh="工坊">Studio</p>
+        <div class="footer__links"><a href="../../company/index.html" data-en="About the studio" data-zh="关于本站">About the studio</a>
+<a href="../../tech/index.html" data-en="Tech notes" data-zh="技术笔记">Tech notes</a>
+<a href="../../troubleshooting/index.html" data-en="Troubleshooting" data-zh="故障速查">Troubleshooting</a>
+<a href="../../materials/index.html" data-en="Materials matrix" data-zh="材料矩阵">Materials matrix</a>
+<a href="../../company/index.html#technology" data-en="Technology" data-zh="技术内核">Technology</a>
+<a href="../../company/index.html#factory" data-en="Factory" data-zh="工厂实拍">Factory</a>
+<a href="../../downloads/index.html" data-en="Downloads" data-zh="资料下载">Downloads</a>
+<a href="../../contact/index.html" data-en="Contact" data-zh="联系我们">Contact</a></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Contact" data-zh="联系">Contact</p>
+        <div class="footer__links"><span class="footer__name">Jessie</span>
+<a href="tel:+8615920122366">+86 159 2012 2366</a>
+<span class="footer__hours" data-en="Mon–Sat 8:30am–6:00pm (GMT+8)" data-zh="周一至周六 8:30–18:00（北京时间）">Mon–Sat 8:30am–6:00pm (GMT+8)</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-en="© 2026 INKSTONE STUDIO · An independent studio in Guangzhou" data-zh="© 2026 墨印工坊 · 广州独立工作室">© 2026 INKSTONE STUDIO · An independent studio in Guangzhou</span>
+      <span class="footer__cn cn-deco" aria-hidden="true">墨 印 工 坊 · 广 州</span>
+      <span data-en="DAXIONG DESIGN" data-zh="大熊设计">大熊设计</span>
+    </div>
+  </div>
+</footer>
+<audio id="bg-music" src="../../assets/audio/guqin-loop.mp3" loop preload="none"></audio>
+<button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Background music" data-aria-en="Background music" data-aria-zh="背景音乐" title="背景音乐 / Background music">
+  <span class="music-toggle__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V6l10-2v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="6.5" cy="18" r="2.6" stroke="currentColor" stroke-width="1.5"/><circle cx="16.5" cy="16" r="2.6" stroke="currentColor" stroke-width="1.5"/></svg>
+  </span>
+  <span class="music-toggle__label" data-en="Music" data-zh="轻音乐">Music</span>
+</button>
+
+<button class="to-top" type="button" id="to-top" aria-label="Back to top" data-aria-en="Back to top" data-aria-zh="回到顶部">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script src="../../assets/js/app.js"></script>
+<script src="../../assets/js/tech.js"></script>
+
+
+
+</body>
+</html>

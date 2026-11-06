@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-title-en="Pass lines and banding: find the cause before you touch the profile | INKSTONE STUDIO" data-title-zh="pass 道与深浅条带：先找原因，再动曲线 | 墨印工坊" data-desc-en="Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle" data-desc-zh="pass 道是「对位误差」，不是「颜色误差」。机械误差不可能为零，要做的是把它压到看不见。顺序是：喷嘴检查 → 对位 → 羽化 → 步进。">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.remove('no-js');try{var l=localStorage.getItem('lang');if(l==='zh'){document.documentElement.lang='zh-CN';document.documentElement.setAttribute('data-lang','zh');}}catch(e){}</script>
+<title>Pass lines and banding: find the cause before you touch the profile | INKSTONE STUDIO</title>
+<meta name="description" content="Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle">
+<meta name="theme-color" content="#F4EEE2">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="INKSTONE STUDIO">
+<meta property="og:title" content="Pass lines and banding: find the cause before you touch the profile | INKSTONE STUDIO">
+<meta property="og:description" content="Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle">
+<meta property="og:url" content="https://gzwlmyx.github.io/uv-printers/tech/pass-lines-banding/">
+<link rel="canonical" href="https://gzwlmyx.github.io/uv-printers/tech/pass-lines-banding/">
+<meta property="og:image" content="https://gzwlmyx.github.io/uv-printers/assets/img/tech/pass-lines.svg">
+<meta property="og:image:alt" content="Pass lines and banding: find the cause before you touch the profile | INKSTONE STUDIO">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/art/favicon.svg">
+<link rel="preload" href="../../assets/fonts/cormorant_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/inter_400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/pages.css">
+<link rel="stylesheet" href="../../assets/css/tech.css">
+<noscript><style>.reveal,.reveal-stagger>*{opacity:1 !important;transform:none !important}</style></noscript>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Pass lines and banding: find the cause before you touch the profile", "description": "Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle check, alignment, feathering and step — in that order.", "articleSection": "Maintenance", "inLanguage": "en", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "author": {"@type": "Organization", "name": "INKSTONE STUDIO"}, "publisher": {"@type": "Organization", "name": "INKSTONE STUDIO"}, "keywords": "banding, pass lines, feathering, alignment, step", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://gzwlmyx.github.io/uv-printers/tech/pass-lines-banding/"}}</script>
+
+</head>
+<body class="page-article" data-page="article">
+<a class="skip-link" href="#main"><span data-en="Skip to content" data-zh="跳到主要内容">Skip to content</span></a>
+<header class="header" id="site-header">
+  <div class="header__inner">
+    <a class="brand" href="../../index.html" aria-label="INKSTONE STUDIO — Home" data-aria-en="INKSTONE STUDIO — Home" data-aria-zh="墨印工坊 — 首页">
+      <span class="brand__seal"><img src="../../assets/art/seal-inkstone.svg" alt="INKSTONE STUDIO" width="38" height="38"></span>
+      <span class="brand__text">
+        <span class="brand__name" data-en="INKSTONE" data-zh="墨印工坊">INKSTONE</span>
+        <span class="brand__sub" data-en="STUDIO" data-zh="数码印刷笔记">STUDIO</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary" data-aria-en="Primary" data-aria-zh="主导航">
+      <a href="../../products/index.html" data-en="Products" data-zh="产品">Products</a>
+      <a href="../../tech/index.html" aria-current="page" data-en="Tech" data-zh="技术">Tech</a>
+      <a href="../../index.html#cases" data-en="Cases" data-zh="案例">Cases</a>
+      <a href="../../downloads/index.html" data-en="Downloads" data-zh="下载">Downloads</a>
+      <a href="../../company/index.html" data-en="About" data-zh="关于">About</a>
+      <a href="../../contact/index.html" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Language" data-aria-en="Language" data-aria-zh="语言">
+        <button type="button" class="lang__btn is-active" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <span class="lang__sep" aria-hidden="true">|</span>
+        <button type="button" class="lang__btn" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="../../contact/index.html"><span data-en="Get a Quote" data-zh="获取报价">Get a Quote</span></a>
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-label="Open menu" data-aria-en="Open menu" data-aria-zh="打开菜单" aria-expanded="false" aria-controls="site-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="site-drawer" aria-hidden="true" aria-label="Menu" data-aria-en="Menu" data-aria-zh="菜单">
+  <nav class="drawer__nav" aria-label="Mobile" data-aria-en="Mobile" data-aria-zh="移动导航">
+    <a href="../../products/index.html"><span data-en="Products" data-zh="产品">Products</span><small aria-hidden="true">01</small></a>
+    <a href="../../tech/index.html"><span data-en="Tech" data-zh="技术">Tech</span><small aria-hidden="true">02</small></a>
+    <a href="../../index.html#cases"><span data-en="Cases" data-zh="案例">Cases</span><small aria-hidden="true">03</small></a>
+    <a href="../../downloads/index.html"><span data-en="Downloads" data-zh="下载">Downloads</span><small aria-hidden="true">04</small></a>
+    <a href="../../company/index.html"><span data-en="About" data-zh="关于">About</span><small aria-hidden="true">05</small></a>
+    <a href="../../contact/index.html"><span data-en="Contact" data-zh="联系">Contact</span><small aria-hidden="true">06</small></a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+8615920122366">+86 159 2012 2366</a>
+    <br>
+    <span data-en="Guangzhou, China · Mon–Sat 8:30am–6:00pm (GMT+8)" data-zh="中国广州 · 周一至周六 8:30–18:00（北京时间）">Guangzhou, China · Mon–Sat 8:30am–6:00pm (GMT+8)</span>
+  </div>
+</div>
+
+<main id="main">
+<article class="ta-article">
+  <section class="page-hero tech-hero ta-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb" data-aria-en="Breadcrumb" data-aria-zh="面包屑">
+        <a href="../../index.html" data-en="Home" data-zh="首页">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="../../tech/index.html" data-en="Tech" data-zh="技术">Tech</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span aria-current="page" data-en="Pass lines and banding: find the cause before you touch the profile" data-zh="pass 道与深浅条带：先找原因，再动曲线">Pass lines and banding: find the cause before you touch the profile</span>
+      </nav>
+      <p class="ta-kicker">
+        <span class="ta-cat" data-en="Maintenance" data-zh="维护">Maintenance</span>
+        <span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span>
+        <span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span>
+        <span class="ta-mono" data-en="Updated 2026-11" data-zh="更新于 2026-11">Updated 2026-11</span>
+      </p>
+      <h1 data-en="Pass lines and banding: find the cause before you touch the profile" data-zh="pass 道与深浅条带：先找原因，再动曲线">Pass lines and banding: find the cause before you touch the profile</h1>
+      <p class="lead" data-en="Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle check, alignment, feathering and step — in that order." data-zh="pass 道是「对位误差」，不是「颜色误差」。机械误差不可能为零，要做的是把它压到看不见。顺序是：喷嘴检查 → 对位 → 羽化 → 步进。">Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle check, alignment, feathering and step — in that order.</p>
+      <ul class="ta-tags"><li class="ta-tag" data-en="banding" data-zh="pass 道">banding</li><li class="ta-tag" data-en="pass lines" data-zh="深浅条带">pass lines</li><li class="ta-tag" data-en="feathering" data-zh="羽化">feathering</li><li class="ta-tag" data-en="alignment" data-zh="对位">alignment</li><li class="ta-tag" data-en="step" data-zh="步进">step</li></ul>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap ta-layout">
+      <div class="ta-main">
+        <div class="ta-body">
+<p class="ta-p" data-en="The short answer: banding is a spacing problem. Every swath of the head has to land exactly next to the previous one; when it lands too close the overlap darkens, when it lands too far apart a light line appears. On a real machine the error is never zero — the goal is to keep it under the level the eye can see, and to fix the cause rather than hide it with a heavier ink limit." data-zh="先说结论：条带是「间距」问题。喷头每一道的落点都要和前一道严丝合缝：压得太近，重叠处变深；离得太远，出现白线。真机上的误差不可能为零，目标是压到肉眼看不见，并且修原因，而不是靠加墨量把它盖住。">The short answer: banding is a spacing problem. Every swath of the head has to land exactly next to the previous one; when it lands too close the overlap darkens, when it lands too far apart a light line appears. On a real machine the error is never zero — the goal is to keep it under the level the eye can see, and to fix the cause rather than hide it with a heavier ink limit.</p>
+<h2 class="ta-h2" data-en="The usual suspects, in order of likelihood" data-zh="常见原因，按概率排序">The usual suspects, in order of likelihood</h2>
+<div class="ta-table-wrap"><table class="ta-table"><thead><tr><th data-en="Cause" data-zh="原因">Cause</th><th data-en="Symptom" data-zh="现象">Symptom</th><th data-en="First fix" data-zh="先做什么">First fix</th></tr></thead><tbody><tr><td data-en="Feathering too low" data-zh="羽化过低">Feathering too low</td><td data-en="Uniform fine lines at every swath, worse on gradients" data-zh="每一道都有均匀细线，渐变更明显">Uniform fine lines at every swath, worse on gradients</td><td data-en="Raise feathering in the RIP and test on a solid patch" data-zh="在 RIP 里提高羽化，用实色块验证">Raise feathering in the RIP and test on a solid patch</td></tr><tr><td data-en="Bidirectional alignment off" data-zh="双向对位偏差">Bidirectional alignment off</td><td data-en="Lines differ between left-to-right and right-to-left passes" data-zh="左→右与右→左的线不一样">Lines differ between left-to-right and right-to-left passes</td><td data-en="Re-run bidirectional alignment at the current media height" data-zh="按当前材料高度重做双向对位">Re-run bidirectional alignment at the current media height</td></tr><tr><td data-en="Step (feed) too small or too large" data-zh="步进偏小或偏大">Step (feed) too small or too large</td><td data-en="A dark or light band at every swath boundary" data-zh="每道交界处一条深带或浅带">A dark or light band at every swath boundary</td><td data-en="Calibrate media feed; check the Y belt and roller tension" data-zh="校准走料；检查 Y 轴皮带与压轮张力">Calibrate media feed; check the Y belt and roller tension</td></tr><tr><td data-en="Nozzle deflection / dropout" data-zh="喷嘴偏针／缺墨">Nozzle deflection / dropout</td><td data-en="One thin line, sometimes interrupted, with ink mist nearby" data-zh="一条细线，时断时续，附近有墨雾">One thin line, sometimes interrupted, with ink mist nearby</td><td data-en="Nozzle check and clean; replace the head if it persists" data-zh="打喷嘴检查并清洗；持续存在则换头">Nozzle check and clean; replace the head if it persists</td></tr><tr><td data-en="Media height variation" data-zh="材料高度不均">Media height variation</td><td data-en="Wavy banding that follows the surface, not the swath" data-zh="条带跟着表面起伏走，不跟喷头走">Wavy banding that follows the surface, not the swath</td><td data-en="Re-measure at the highest point; flatten or vacuum the media down" data-zh="按最高点重新测高；压平或用真空吸住">Re-measure at the highest point; flatten or vacuum the media down</td></tr><tr><td data-en="Too few passes for the resolution" data-zh="分辨率对应的 pass 数不足">Too few passes for the resolution</td><td data-en="Banding only in dense solids at high speed" data-zh="只在高速、厚实时出现">Banding only in dense solids at high speed</td><td data-en="Increase passes, lower speed, and re-check the deadline" data-zh="增加 pass 数、降速，并重新评估交期">Increase passes, lower speed, and re-check the deadline</td></tr></tbody></table></div>
+<figure class="ta-figure"><img src="../../assets/img/tech/pass-lines.svg" alt="Adjacent swaths must meet exactly: too close darkens the overlap, too far leaves a light line." data-alt-en="Adjacent swaths must meet exactly: too close darkens the overlap, too far leaves a light line." data-alt-zh="相邻两道必须刚好相接：压得太近重叠变深，离得太远留下白线。" loading="lazy" decoding="async"><figcaption><span class="ta-figure__num">FIG. 01</span><span class="ta-figure__cap" data-en="Adjacent swaths must meet exactly: too close darkens the overlap, too far leaves a light line." data-zh="相邻两道必须刚好相接：压得太近重叠变深，离得太远留下白线。">Adjacent swaths must meet exactly: too close darkens the overlap, too far leaves a light line.</span></figcaption></figure>
+<h2 class="ta-h2" data-en="A five-minute diagnostic routine" data-zh="五分钟排查顺序">A five-minute diagnostic routine</h2>
+<ol class="ta-list"><li data-en="Print the nozzle check and look at it at an angle under a lamp; count missing or deflected nozzles." data-zh="打喷嘴检查图，在灯下斜着看，数缺针与偏针。">Print the nozzle check and look at it at an angle under a lamp; count missing or deflected nozzles.</li><li data-en="Print a solid patch at the same resolution and pass count as the failing job." data-zh="用与失败件相同的分辨率、pass 数打一块实色。">Print a solid patch at the same resolution and pass count as the failing job.</li><li data-en="If every swath shows a line, test feathering and step before touching alignment." data-zh="每一道都有线：先试羽化与步进，再动对位。">If every swath shows a line, test feathering and step before touching alignment.</li><li data-en="If left-to-right and right-to-left differ, do the bidirectional alignment at the real head height." data-zh="左右方向不一样：按真实喷头高度重做双向对位。">If left-to-right and right-to-left differ, do the bidirectional alignment at the real head height.</li><li data-en="If a single line appears, clean and re-check that head before reprinting." data-zh="只有一条线：先清洗复查那只喷头，再重打。">If a single line appears, clean and re-check that head before reprinting.</li><li data-en="Log the head height, alignment result and media batch with the job." data-zh="把喷头高度、对位结果、材料批次和这单一起记录。">Log the head height, alignment result and media batch with the job.</li></ol>
+<aside class="ta-note"><span class="ta-note__tag" data-en="Field note" data-zh="现场笔记">Field note</span><p class="ta-note__text" data-en="Workshop note: the nozzle check can be perfect and the job still band. Our 2022 notes have the same case — a clean test line but visible streaks in the print. It usually means a slight clog that only shows at high firing frequency, so we clean, then calibrate the head alignment, and only then consider the RIP. Replacing a head to fix banding is the most expensive way to learn this." data-zh="现场笔记：喷嘴检查图可以完美，活照样出条带。我们 2022 年的资料里就有这个情况——测试条很干净，印出来却有拉丝。通常是轻微堵塞，只在高频点火时才显现，所以我们先清洗、再做喷头校准，最后才怀疑 RIP。为了治条带换喷头，是最贵的一种学习方式。">Workshop note: the nozzle check can be perfect and the job still band. Our 2022 notes have the same case — a clean test line but visible streaks in the print. It usually means a slight clog that only shows at high firing frequency, so we clean, then calibrate the head alignment, and only then consider the RIP. Replacing a head to fix banding is the most expensive way to learn this.</p></aside>
+<p class="ta-p" data-en="One habit prevents most of this: print the test line before the first job of the day, and record head height whenever the media changes. Banding that appears after a media change is almost always a height or feed problem, not a head problem." data-zh="有一个习惯能防住大部分：每天开机第一单之前打测试条；每次换材料记录喷头高度。换材料之后才出现的条带，几乎都是高度或走料问题，不是喷头问题。">One habit prevents most of this: print the test line before the first job of the day, and record head height whenever the media changes. Banding that appears after a media change is almost always a height or feed problem, not a head problem.</p>
+<p class="ta-p" data-en="Finally, keep banding and streaking separate. Banding is regular and travels with the head; streaking is intermittent and directionless, usually a slightly blocked nozzle or an ink-flow problem. The two have different diagnostic orders — do not force one checklist onto both." data-zh="最后一点：把「条带」和「拉丝」分开看。条带是有规律的、跟着喷头走；拉丝是偶发的、方向乱，多半是喷头轻微堵塞或墨水流动问题。两类问题的排查顺序不一样，别用一套办法硬套。">Finally, keep banding and streaking separate. Banding is regular and travels with the head; streaking is intermittent and directionless, usually a slightly blocked nozzle or an ink-flow problem. The two have different diagnostic orders — do not force one checklist onto both.</p>
+        </div>
+        <nav class="ta-pn" aria-label="Article navigation" data-aria-en="Article navigation" data-aria-zh="文章导航">
+<a class="ta-pn__link" href="../../tech/adhesion-surface-energy/index.html"><span class="ta-pn__dir" data-en="Previous" data-zh="上一篇">Previous</span><span class="ta-pn__title" data-en="Adhesion and surface energy: the dyne number decides" data-zh="附着力与表面能：达因值说了算">Adhesion and surface energy: the dyne number decides</span></a>
+<a class="ta-pn__link ta-pn__link--next" href="../../tech/color-shift-density/index.html"><span class="ta-pn__dir" data-en="Next" data-zh="下一篇">Next</span><span class="ta-pn__title" data-en="When the colour drifts: check the machine before the ICC" data-zh="颜色变了：先查机器，再动 ICC">When the colour drifts: check the machine before the ICC</span></a>
+        </nav>
+      </div>
+      <aside class="ta-aside">
+<div class="ta-aside__block"><h2 class="ta-aside__h" data-en="Machines in this note" data-zh="本文涉及机型">Machines in this note</h2><div class="ta-machines"><a class="ta-machine" href="../../products/nc-uv0609peiii-ii/index.html"><span class="ta-mono">NC-UV0609PEIII-II</span><small data-en="High Cost Performance Digital Inkjet Printer" data-zh="高性价比数码喷墨打印机">High Cost Performance Digital Inkjet Printer</small></a>
+<a class="ta-machine" href="../../products/nc-uv1600/index.html"><span class="ta-mono">NC-UV1600</span><small data-en="1.6 m Indoor &amp; Outdoor Advertising Printer" data-zh="1.6 m 室内外广告打印机">1.6 m Indoor &amp; Outdoor Advertising Printer</small></a></div></div>
+<div class="ta-aside__block"><h2 class="ta-aside__h" data-en="Read next" data-zh="接着读">Read next</h2><div class="ta-related"><a class="ta-related__item" href="../../tech/printhead-care/index.html"><span class="ta-related__cat" data-en="Maintenance" data-zh="维护">Maintenance</span><span class="ta-related__title" data-en="Printhead care: the habits that decide head life" data-zh="喷头保养：决定喷头寿命的是习惯">Printhead care: the habits that decide head life</span></a>
+<a class="ta-related__item" href="../../tech/color-shift-density/index.html"><span class="ta-related__cat" data-en="Maintenance" data-zh="维护">Maintenance</span><span class="ta-related__title" data-en="When the colour drifts: check the machine before the ICC" data-zh="颜色变了：先查机器，再动 ICC">When the colour drifts: check the machine before the ICC</span></a>
+<a class="ta-related__item" href="../../tech/piezo-droplet-formation/index.html"><span class="ta-related__cat" data-en="Principles" data-zh="原理">Principles</span><span class="ta-related__title" data-en="How a piezo printhead forms a droplet" data-zh="压电喷头是怎么把墨滴「挤」出来的">How a piezo printhead forms a droplet</span></a></div></div>
+<div class="ta-aside__block ta-source"><h2 class="ta-aside__h" data-en="Sources" data-zh="资料来源">Sources</h2><p data-en="Cause list and diagnostic order rewritten from our 2022 pass-line and streaking scripts; feathering, bidirectional alignment and step are standard inkjet terms. No fixed numerical settings are given because they are machine-, media- and RIP-specific." data-zh="原因清单与排查顺序由 2022 年 pass 道、拉丝内部文案消化重写；羽化、双向对位、步进为喷墨通用术语。未给固定数值，因为参数随机型、材料与 RIP 而变。">Cause list and diagnostic order rewritten from our 2022 pass-line and streaking scripts; feathering, bidirectional alignment and step are standard inkjet terms. No fixed numerical settings are given because they are machine-, media- and RIP-specific.</p></div>
+      </aside>
+    </div>
+  </section>
+</article>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="brand__seal"><img src="../../assets/art/seal-inkstone.svg" alt="INKSTONE STUDIO" width="38" height="38"></span>
+          <span class="brand__text">
+            <span class="brand__name" data-en="INKSTONE" data-zh="墨印工坊">INKSTONE</span>
+            <span class="brand__sub" data-en="STUDIO · GUANGZHOU" data-zh="工坊 · 广州">STUDIO · GUANGZHOU</span>
+          </span>
+        </div>
+        <p class="footer__desc" data-en="A personal notebook of digital inkjet printing — UV flatbed, rotary, roll-to-roll and onepass machines built in Guangzhou, with the specs and brochures that actually matter." data-zh="数码喷墨设备的个人资料库 —— UV 平板、360° 圆柱、卷材与 Onepass，附真实参数与彩页，全部来自广州制造。">Digital inkjet printers designed and built in Guangzhou — UV flatbed, rotary, roll-to-roll, onepass and 3D. Seventeen years of printing craft, shipped to more than sixty countries.</p>
+        <div class="footer__social"></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Products" data-zh="产品">Products</p>
+        <div class="footer__links"><a href="../../products/index.html" data-en="All products" data-zh="全部产品">All products</a>
+<a href="../../products/index.html#cat-uv-flatbed" data-en="UV Flatbed Printers" data-zh="UV 平板打印机">UV Flatbed Printers</a>
+<a href="../../products/index.html#cat-rotary" data-en="360° Rotary UV Printers" data-zh="360° 圆柱 UV 打印机">360° Rotary UV Printers</a>
+<a href="../../products/index.html#cat-roll-to-roll" data-en="Roll-to-Roll &amp; UV DTF Printers" data-zh="卷材与 UV DTF 打印机">Roll-to-Roll &amp; UV DTF Printers</a>
+<a href="../../products/index.html#cat-onepass" data-en="Onepass High-Speed Printers" data-zh="Onepass 高速打印机">Onepass High-Speed Printers</a></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Studio" data-zh="工坊">Studio</p>
+        <div class="footer__links"><a href="../../company/index.html" data-en="About the studio" data-zh="关于本站">About the studio</a>
+<a href="../../tech/index.html" data-en="Tech notes" data-zh="技术笔记">Tech notes</a>
+<a href="../../troubleshooting/index.html" data-en="Troubleshooting" data-zh="故障速查">Troubleshooting</a>
+<a href="../../materials/index.html" data-en="Materials matrix" data-zh="材料矩阵">Materials matrix</a>
+<a href="../../company/index.html#technology" data-en="Technology" data-zh="技术内核">Technology</a>
+<a href="../../company/index.html#factory" data-en="Factory" data-zh="工厂实拍">Factory</a>
+<a href="../../downloads/index.html" data-en="Downloads" data-zh="资料下载">Downloads</a>
+<a href="../../contact/index.html" data-en="Contact" data-zh="联系我们">Contact</a></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Contact" data-zh="联系">Contact</p>
+        <div class="footer__links"><span class="footer__name">Jessie</span>
+<a href="tel:+8615920122366">+86 159 2012 2366</a>
+<span class="footer__hours" data-en="Mon–Sat 8:30am–6:00pm (GMT+8)" data-zh="周一至周六 8:30–18:00（北京时间）">Mon–Sat 8:30am–6:00pm (GMT+8)</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-en="© 2026 INKSTONE STUDIO · An independent studio in Guangzhou" data-zh="© 2026 墨印工坊 · 广州独立工作室">© 2026 INKSTONE STUDIO · An independent studio in Guangzhou</span>
+      <span class="footer__cn cn-deco" aria-hidden="true">墨 印 工 坊 · 广 州</span>
+      <span data-en="DAXIONG DESIGN" data-zh="大熊设计">大熊设计</span>
+    </div>
+  </div>
+</footer>
+<audio id="bg-music" src="../../assets/audio/guqin-loop.mp3" loop preload="none"></audio>
+<button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Background music" data-aria-en="Background music" data-aria-zh="背景音乐" title="背景音乐 / Background music">
+  <span class="music-toggle__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V6l10-2v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="6.5" cy="18" r="2.6" stroke="currentColor" stroke-width="1.5"/><circle cx="16.5" cy="16" r="2.6" stroke="currentColor" stroke-width="1.5"/></svg>
+  </span>
+  <span class="music-toggle__label" data-en="Music" data-zh="轻音乐">Music</span>
+</button>
+
+<button class="to-top" type="button" id="to-top" aria-label="Back to top" data-aria-en="Back to top" data-aria-zh="回到顶部">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script src="../../assets/js/app.js"></script>
+<script src="../../assets/js/tech.js"></script>
+
+
+
+</body>
+</html>

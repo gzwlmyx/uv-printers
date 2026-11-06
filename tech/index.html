@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-title-en="UV technology, field notes — INKSTONE STUDIO" data-title-zh="UV 技术 · 现场笔记 — 墨印工坊" data-desc-en="Field notes on UV printing: how curing works, why pass lines appear, white ink on dark substrates, adhesion, maintenance and materials — written from the workshop floor." data-desc-zh="UV 打印技术现场笔记：固化原理、pass 道成因、深色材料白墨、附着力、维护与材料矩阵 —— 全部来自车间一线。">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.remove('no-js');try{var l=localStorage.getItem('lang');if(l==='zh'){document.documentElement.lang='zh-CN';document.documentElement.setAttribute('data-lang','zh');}}catch(e){}</script>
+<title>UV technology, field notes — INKSTONE STUDIO</title>
+<meta name="description" content="Field notes on UV printing: how curing works, why pass lines appear, white ink on dark substrates, adhesion, maintenance and materials — written from the workshop floor.">
+<meta name="theme-color" content="#F4EEE2">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INKSTONE STUDIO">
+<meta property="og:title" content="UV technology, field notes — INKSTONE STUDIO">
+<meta property="og:description" content="Field notes on UV printing: how curing works, why pass lines appear, white ink on dark substrates, adhesion, maintenance and materials — written from the workshop floor.">
+<meta property="og:url" content="https://gzwlmyx.github.io/uv-printers/tech/">
+<link rel="canonical" href="https://gzwlmyx.github.io/uv-printers/tech/">
+<meta property="og:image" content="https://gzwlmyx.github.io/uv-printers/assets/img/tech/1.webp">
+<meta property="og:image:alt" content="UV technology, field notes — INKSTONE STUDIO">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/art/favicon.svg">
+<link rel="preload" href="../assets/fonts/cormorant_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter_400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<link rel="stylesheet" href="../assets/css/tech.css">
+<noscript><style>.reveal,.reveal-stagger>*{opacity:1 !important;transform:none !important}</style></noscript>
+
+
+</head>
+<body class="page-tech" data-page="tech">
+<a class="skip-link" href="#main"><span data-en="Skip to content" data-zh="跳到主要内容">Skip to content</span></a>
+<header class="header" id="site-header">
+  <div class="header__inner">
+    <a class="brand" href="../index.html" aria-label="INKSTONE STUDIO — Home" data-aria-en="INKSTONE STUDIO — Home" data-aria-zh="墨印工坊 — 首页">
+      <span class="brand__seal"><img src="../assets/art/seal-inkstone.svg" alt="INKSTONE STUDIO" width="38" height="38"></span>
+      <span class="brand__text">
+        <span class="brand__name" data-en="INKSTONE" data-zh="墨印工坊">INKSTONE</span>
+        <span class="brand__sub" data-en="STUDIO" data-zh="数码印刷笔记">STUDIO</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary" data-aria-en="Primary" data-aria-zh="主导航">
+      <a href="../products/index.html" data-en="Products" data-zh="产品">Products</a>
+      <a href="../tech/index.html" aria-current="page" data-en="Tech" data-zh="技术">Tech</a>
+      <a href="../index.html#cases" data-en="Cases" data-zh="案例">Cases</a>
+      <a href="../downloads/index.html" data-en="Downloads" data-zh="下载">Downloads</a>
+      <a href="../company/index.html" data-en="About" data-zh="关于">About</a>
+      <a href="../contact/index.html" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Language" data-aria-en="Language" data-aria-zh="语言">
+        <button type="button" class="lang__btn is-active" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <span class="lang__sep" aria-hidden="true">|</span>
+        <button type="button" class="lang__btn" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="../contact/index.html"><span data-en="Get a Quote" data-zh="获取报价">Get a Quote</span></a>
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-label="Open menu" data-aria-en="Open menu" data-aria-zh="打开菜单" aria-expanded="false" aria-controls="site-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="site-drawer" aria-hidden="true" aria-label="Menu" data-aria-en="Menu" data-aria-zh="菜单">
+  <nav class="drawer__nav" aria-label="Mobile" data-aria-en="Mobile" data-aria-zh="移动导航">
+    <a href="../products/index.html"><span data-en="Products" data-zh="产品">Products</span><small aria-hidden="true">01</small></a>
+    <a href="../tech/index.html"><span data-en="Tech" data-zh="技术">Tech</span><small aria-hidden="true">02</small></a>
+    <a href="../index.html#cases"><span data-en="Cases" data-zh="案例">Cases</span><small aria-hidden="true">03</small></a>
+    <a href="../downloads/index.html"><span data-en="Downloads" data-zh="下载">Downloads</span><small aria-hidden="true">04</small></a>
+    <a href="../company/index.html"><span data-en="About" data-zh="关于">About</span><small aria-hidden="true">05</small></a>
+    <a href="../contact/index.html"><span data-en="Contact" data-zh="联系">Contact</span><small aria-hidden="true">06</small></a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+8615920122366">+86 159 2012 2366</a>
+    <br>
+    <span data-en="Guangzhou, China · Mon–Sat 8:30am–6:00pm (GMT+8)" data-zh="中国广州 · 周一至周六 8:30–18:00（北京时间）">Guangzhou, China · Mon–Sat 8:30am–6:00pm (GMT+8)</span>
+  </div>
+</div>
+
+<main id="main">
+<section class="page-hero tech-hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb" data-aria-en="Breadcrumb" data-aria-zh="面包屑">
+      <a href="../index.html" data-en="Home" data-zh="首页">Home</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span aria-current="page" data-en="Tech" data-zh="技术">Tech</span>
+    </nav>
+    <span class="eyebrow" data-en="Field notes" data-zh="现场笔记">Field notes</span>
+    <h1 data-en="UV technology, field notes" data-zh="UV 技术 · 现场笔记">UV technology, field notes</h1>
+    <p class="lead" data-en="What I have learned at the machine: how curing actually works, why pass lines appear, where white ink goes wrong, and which substrate needs which primer. Written down so the next job goes faster." data-zh="在机器旁学到的东西：固化到底怎么发生、pass 道为什么出现、白墨在哪一步出错、哪种材料需要哪种底涂。写下来，是为了下一单更快。">What I have learned at the machine: how curing actually works, why pass lines appear, where white ink goes wrong, and which substrate needs which primer. Written down so the next job goes faster.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="tech-entries reveal-stagger">
+      <a class="tech-entry" href="../troubleshooting/index.html">
+        <span class="tech-entry__fig" aria-hidden="true">FIG. 01</span>
+        <span class="tech-entry__label" data-en="Troubleshooting" data-zh="故障速查">Troubleshooting</span>
+        <h2 class="tech-entry__title" data-en="Symptom → cause → fix" data-zh="症状 → 原因 → 处理">Symptom → cause → fix</h2>
+        <p class="tech-entry__desc" data-en="12 fault patterns, symptom by symptom" data-zh="12 个故障模式，按症状查">12 fault patterns, symptom by symptom</p>
+        <span class="tech-entry__go" data-en="Open the fault finder" data-zh="打开故障速查">Open the fault finder</span>
+      </a>
+      <a class="tech-entry" href="../materials/index.html">
+        <span class="tech-entry__fig" aria-hidden="true">FIG. 02</span>
+        <span class="tech-entry__label" data-en="Materials matrix" data-zh="材料矩阵">Materials matrix</span>
+        <h2 class="tech-entry__title" data-en="Substrate × five decisions" data-zh="材料 × 五个决策">Substrate × five decisions</h2>
+        <p class="tech-entry__desc" data-en="12 substrates, five columns of decisions" data-zh="12 种材料，五列关键决策">12 substrates, five columns of decisions</p>
+        <span class="tech-entry__go" data-en="Open the matrix" data-zh="打开材料矩阵">Open the matrix</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="tabs tech-tabs" data-tech-tabs data-target="#tech-grid" role="group" aria-label="Filter articles" data-aria-en="Filter articles" data-aria-zh="筛选文章"><button type="button" class="tab is-active" data-filter="all" aria-pressed="true" data-en="All" data-zh="全部">All</button>
+      <button type="button" class="tab" data-filter="principle" aria-pressed="false" data-en="Principles" data-zh="原理">Principles</button>
+      <button type="button" class="tab" data-filter="process" aria-pressed="false" data-en="Process" data-zh="工艺">Process</button>
+      <button type="button" class="tab" data-filter="material" aria-pressed="false" data-en="Materials" data-zh="材料">Materials</button>
+      <button type="button" class="tab" data-filter="maintenance" aria-pressed="false" data-en="Maintenance" data-zh="维护">Maintenance</button></div>
+    <p class="filter-count muted" id="tech-count" data-total="13" data-en="Showing 13 of 13 field notes" data-zh="显示 13 / 共 13 篇技术笔记">Showing 13 of 13 field notes</p>
+    <div class="ta-grid reveal-stagger" id="tech-grid"><article class="ta-card" data-cat="principle"><a class="ta-card__link" href="../tech/uv-curing-principle/index.html"><span class="ta-card__cat"><span data-en="Principles" data-zh="原理">Principles</span></span><h3 class="ta-card__title" data-en="How UV ink actually cures" data-zh="UV 墨水到底是怎么固化的">How UV ink actually cures</h3><p class="ta-card__sum" data-en="UV ink does not dry — it cures. A photoinitiator absorbs light around 395 nm and locks the film into a cross-linked network. Here is why touch-dry is not the same as cured, and what energy density really means." data-zh="UV 墨水不是「干」的，是「固化」的：光引发剂吸收约 395 nm 的紫外光，把墨膜交联成网络。表干不等于固化，能量密度才是关键。">UV ink does not dry — it cures. A photoinitiator absorbs light around 395 nm and locks the film into a cross-linked network. Here is why touch-dry is not the same as cured, and what energy density really means.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Basic" data-zh="入门">Basic</span><span class="ta-mono" data-en="5 min read" data-zh="5 分钟">5 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="UV curing" data-zh="UV 固化">UV curing</li><li class="ta-tag" data-en="photoinitiator" data-zh="光引发剂">photoinitiator</li><li class="ta-tag" data-en="395 nm LED" data-zh="395 nm LED">395 nm LED</li></ul></a></article>
+<article class="ta-card" data-cat="principle"><a class="ta-card__link" href="../tech/piezo-droplet-formation/index.html"><span class="ta-card__cat"><span data-en="Principles" data-zh="原理">Principles</span></span><h3 class="ta-card__title" data-en="How a piezo printhead forms a droplet" data-zh="压电喷头是怎么把墨滴「挤」出来的">How a piezo printhead forms a droplet</h3><p class="ta-card__sum" data-en="A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all come from that waveform, which is why two machines with the same head can print differently." data-zh="压电喷头不是靠加热或气压喷墨，而是让压电元件变形、在墨腔内产生压力波把墨滴推出喷嘴。墨滴大小、灰度级和网点扩大都来自驱动波形——所以同样型号的喷头，两台机器印出来可以不一样。">A piezo head does not boil ink or spray it — it deforms a chamber and sends a pressure wave through the nozzle. Drop size, grey-scale levels and dot gain all come from that waveform, which is why two machines with the same head can print differently.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="piezo" data-zh="压电">piezo</li><li class="ta-tag" data-en="Epson i3200" data-zh="爱普生 i3200">Epson i3200</li><li class="ta-tag" data-en="Epson i1600" data-zh="爱普生 i1600">Epson i1600</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/white-ink-on-dark/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="Why dark and clear materials need white ink" data-zh="深色和透明材料为什么必须打白墨">Why dark and clear materials need white ink</h3><p class="ta-card__sum" data-en="CMYK inks are translucent. On black acrylic or clear PET the colour has nothing to reflect back, so it turns muddy or disappears. White ink builds the reflective base — and because it is a pigment suspension, it needs circulation, not just a good profile." data-zh="CMYK 墨水是半透明的。打在黑色亚克力或透明 PET 上，颜色没有可反射的底，就会发闷甚至看不见。白墨提供反射底层；而白墨是颜料悬浮液，除了曲线，更需要循环与维护。">CMYK inks are translucent. On black acrylic or clear PET the colour has nothing to reflect back, so it turns muddy or disappears. White ink builds the reflective base — and because it is a pigment suspension, it needs circulation, not just a good profile.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Basic" data-zh="入门">Basic</span><span class="ta-mono" data-en="5 min read" data-zh="5 分钟">5 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="white ink" data-zh="白墨">white ink</li><li class="ta-tag" data-en="opacity" data-zh="遮盖力">opacity</li><li class="ta-tag" data-en="dark substrates" data-zh="深色材料">dark substrates</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/varnish-and-relief/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="Varnish and 2.5D relief: building height on purpose" data-zh="光油与 2.5D 浮雕：有目的地堆高度">Varnish and 2.5D relief: building height on purpose</h3><p class="ta-card__sum" data-en="Varnish is a build material, not just a shine. Spot varnish adds contrast; multiple passes add real height. The hard part is curing the middle of the stack and keeping dust out of a wet, glossy surface." data-zh="光油不只是「提亮」，它是可以堆叠的材料。局部光油做对比，多遍光油做真实高度；难点在于把堆叠中间固化透，以及让湿亮的表面别沾灰。">Varnish is a build material, not just a shine. Spot varnish adds contrast; multiple passes add real height. The hard part is curing the middle of the stack and keeping dust out of a wet, glossy surface.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="varnish" data-zh="光油">varnish</li><li class="ta-tag" data-en="spot UV" data-zh="局部 UV">spot UV</li><li class="ta-tag" data-en="2.5D relief" data-zh="2.5D 浮雕">2.5D relief</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/uv-foil-stamping/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="UV foil stamping: glue, heat and a very short window" data-zh="UV 烫金：胶水、温度和很短的工艺窗口">UV foil stamping: glue, heat and a very short window</h3><p class="ta-card__sum" data-en="UV foil is not a metallic ink. A tacky glue is printed exactly where the foil should stick, the foil is pressed on with heat and pressure, and the carrier is peeled away. Most failures are a glue or a temperature problem, not a foil problem." data-zh="UV 烫金不是金属墨：先在需要烫金的位置打一层胶水，再用温度与压力把烫金膜压上去，最后撕掉载体膜。多数失败是胶水或温度的问题，不是膜的问题。">UV foil is not a metallic ink. A tacky glue is printed exactly where the foil should stick, the foil is pressed on with heat and pressure, and the carrier is peeled away. Most failures are a glue or a temperature problem, not a foil problem.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Advanced" data-zh="深入">Advanced</span><span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="foil stamping" data-zh="烫金">foil stamping</li><li class="ta-tag" data-en="hot foil" data-zh="热烫">hot foil</li><li class="ta-tag" data-en="adhesive" data-zh="胶水">adhesive</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/uv-dtf-crystal-label/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="UV DTF crystal labels: print the sticker, not the part" data-zh="UV DTF 水晶标：打印贴纸，而不是打印工件">UV DTF crystal labels: print the sticker, not the part</h3><p class="ta-card__sum" data-en="UV DTF prints the image, white and adhesive onto a film, laminates it, and transfers the whole stack by hand. It is the practical answer for curved, small or already-finished parts that cannot go on a flatbed." data-zh="UV DTF 先在膜上打印图案、白墨和胶水，覆膜后整层手工转贴。对于曲面、小件或已经成型的工件，上不了平板机的，这是最实际的方案。">UV DTF prints the image, white and adhesive onto a film, laminates it, and transfers the whole stack by hand. It is the practical answer for curved, small or already-finished parts that cannot go on a flatbed.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="5 min read" data-zh="5 分钟">5 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="UV DTF" data-zh="UV DTF">UV DTF</li><li class="ta-tag" data-en="crystal label" data-zh="水晶标">crystal label</li><li class="ta-tag" data-en="transfer" data-zh="转贴">transfer</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/cylinder-printing/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="360° cylinder printing: it is a fixturing problem first" data-zh="360° 圆柱打印：首先是治具问题">360° cylinder printing: it is a fixturing problem first</h3><p class="ta-card__sum" data-en="A rotary UV printer wraps the image around a rotating part while the head moves along the axis. Diameter, taper and runout decide the gap; the seam decides whether the job looks professional. Measure the part before you print it." data-zh="圆柱 UV 打印机让工件旋转、喷头沿轴向移动，把图案包一圈。直径、锥度和跳动决定喷头间距，接缝决定成品是否体面。打之前先量件。">A rotary UV printer wraps the image around a rotating part while the head moves along the axis. Diameter, taper and runout decide the gap; the seam decides whether the job looks professional. Measure the part before you print it.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Advanced" data-zh="深入">Advanced</span><span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="rotary printing" data-zh="圆柱打印">rotary printing</li><li class="ta-tag" data-en="cylinder" data-zh="旋转">cylinder</li><li class="ta-tag" data-en="fixture" data-zh="治具">fixture</li></ul></a></article>
+<article class="ta-card" data-cat="material"><a class="ta-card__link" href="../tech/adhesion-surface-energy/index.html"><span class="ta-card__cat"><span data-en="Materials" data-zh="材料">Materials</span></span><h3 class="ta-card__title" data-en="Adhesion and surface energy: the dyne number decides" data-zh="附着力与表面能：达因值说了算">Adhesion and surface energy: the dyne number decides</h3><p class="ta-card__sum" data-en="UV ink sticks when it wets the surface. If the substrate&#x27;s surface energy is below the ink&#x27;s surface tension, the ink beads up and peels, no matter how much UV energy you give it. Clean, then treat, then test." data-zh="UV 墨水只有在「润湿」表面时才粘得住。材料表面能低于墨水的表面张力，墨就缩成珠、随后脱落，给再多 UV 能量也没用。先清洁，再处理，最后测试。">UV ink sticks when it wets the surface. If the substrate&#x27;s surface energy is below the ink&#x27;s surface tension, the ink beads up and peels, no matter how much UV energy you give it. Clean, then treat, then test.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="surface energy" data-zh="表面能">surface energy</li><li class="ta-tag" data-en="dyne" data-zh="达因值">dyne</li><li class="ta-tag" data-en="primer" data-zh="涂层">primer</li></ul></a></article>
+<article class="ta-card" data-cat="maintenance"><a class="ta-card__link" href="../tech/pass-lines-banding/index.html"><span class="ta-card__cat"><span data-en="Maintenance" data-zh="维护">Maintenance</span></span><h3 class="ta-card__title" data-en="Pass lines and banding: find the cause before you touch the profile" data-zh="pass 道与深浅条带：先找原因，再动曲线">Pass lines and banding: find the cause before you touch the profile</h3><p class="ta-card__sum" data-en="Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle check, alignment, feathering and step — in that order." data-zh="pass 道是「对位误差」，不是「颜色误差」。机械误差不可能为零，要做的是把它压到看不见。顺序是：喷嘴检查 → 对位 → 羽化 → 步进。">Pass lines are a registration error, not a colour error. A mechanical machine always has some error; the job is to keep it below the visible threshold. Nozzle check, alignment, feathering and step — in that order.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="6 min read" data-zh="6 分钟">6 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="banding" data-zh="pass 道">banding</li><li class="ta-tag" data-en="pass lines" data-zh="深浅条带">pass lines</li><li class="ta-tag" data-en="feathering" data-zh="羽化">feathering</li></ul></a></article>
+<article class="ta-card" data-cat="maintenance"><a class="ta-card__link" href="../tech/color-shift-density/index.html"><span class="ta-card__cat"><span data-en="Maintenance" data-zh="维护">Maintenance</span></span><h3 class="ta-card__title" data-en="When the colour drifts: check the machine before the ICC" data-zh="颜色变了：先查机器，再动 ICC">When the colour drifts: check the machine before the ICC</h3><p class="ta-card__sum" data-en="A colour shift after months of good output is usually a physical change — ink lot, head condition, lamp output, temperature or media — not a broken profile. Measure density first; re-profile last." data-zh="用了一段时间之后颜色变了，通常是物理变化——墨批次、喷头状态、灯衰减、温度或材料——不是曲线坏了。先测密度，最后再重建 ICC。">A colour shift after months of good output is usually a physical change — ink lot, head condition, lamp output, temperature or media — not a broken profile. Measure density first; re-profile last.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="5 min read" data-zh="5 分钟">5 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="colour drift" data-zh="色差">colour drift</li><li class="ta-tag" data-en="density" data-zh="密度">density</li><li class="ta-tag" data-en="ICC" data-zh="ICC">ICC</li></ul></a></article>
+<article class="ta-card" data-cat="maintenance"><a class="ta-card__link" href="../tech/printhead-care/index.html"><span class="ta-card__cat"><span data-en="Maintenance" data-zh="维护">Maintenance</span></span><h3 class="ta-card__title" data-en="Printhead care: the habits that decide head life" data-zh="喷头保养：决定喷头寿命的是习惯">Printhead care: the habits that decide head life</h3><p class="ta-card__sum" data-en="Most dead printheads are killed by maintenance habits, not by printing hours. Cap it, wipe it, flush it, keep the cleaning liquid out of it, and never point an air gun at it." data-zh="多数喷头不是打死的，是「养」死的。盖好、擦净、冲洗、别让清洗液久留、别用气枪对着吹——这几条比买多贵的机器都管用。">Most dead printheads are killed by maintenance habits, not by printing hours. Cap it, wipe it, flush it, keep the cleaning liquid out of it, and never point an air gun at it.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Basic" data-zh="入门">Basic</span><span class="ta-mono" data-en="5 min read" data-zh="5 分钟">5 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="printhead maintenance" data-zh="喷头保养">printhead maintenance</li><li class="ta-tag" data-en="nozzle check" data-zh="喷嘴检查">nozzle check</li><li class="ta-tag" data-en="capping" data-zh="保湿">capping</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/prepress-proofing/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="Why every UV job starts with a proof on your substrate" data-zh="为什么每个 UV 活都要先在你的材料上打样">Why every UV job starts with a proof on your substrate</h3><p class="ta-card__sum" data-en="A UV printer needs no plate, which makes it fast — and makes it easy to print a thousand wrong pieces. A physical proof on the customer&#x27;s own material is the cheapest insurance in the shop." data-zh="UV 打印不用制版，所以快；也因为快，很容易一口气印错一千个。在客户自己的材料上打一张实物样，是车间里最便宜的保险。">A UV printer needs no plate, which makes it fast — and makes it easy to print a thousand wrong pieces. A physical proof on the customer&#x27;s own material is the cheapest insurance in the shop.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Basic" data-zh="入门">Basic</span><span class="ta-mono" data-en="4 min read" data-zh="4 分钟">4 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="proofing" data-zh="打样">proofing</li><li class="ta-tag" data-en="prepress" data-zh="印前">prepress</li><li class="ta-tag" data-en="colour approval" data-zh="颜色确认">colour approval</li></ul></a></article>
+<article class="ta-card" data-cat="process"><a class="ta-card__link" href="../tech/ink-thickness-effects/index.html"><span class="ta-card__cat"><span data-en="Process" data-zh="工艺">Process</span></span><h3 class="ta-card__title" data-en="Ink thickness, dot gain and the eight finishes one machine can make" data-zh="墨滴厚度、网点扩大，以及一台机器能做的八种效果">Ink thickness, dot gain and the eight finishes one machine can make</h3><p class="ta-card__sum" data-en="Ink thickness is a decision with three inputs: the substrate, the artwork and the finish. Change any one and the same file prints differently. Here is how thickness maps to effects, and where it goes wrong." data-zh="墨层厚度由三个输入决定：材料、图案和想要的效果。三者任一改变，同一个文件印出来就不一样。这篇讲厚度怎么对应效果，以及哪里容易翻车。">Ink thickness is a decision with three inputs: the substrate, the artwork and the finish. Change any one and the same file prints differently. Here is how thickness maps to effects, and where it goes wrong.</p><span class="ta-card__foot"><span class="ta-mono" data-en="Intermediate" data-zh="进阶">Intermediate</span><span class="ta-mono" data-en="5 min read" data-zh="5 分钟">5 min read</span></span><ul class="ta-card__tags"><li class="ta-tag" data-en="ink thickness" data-zh="墨层厚度">ink thickness</li><li class="ta-tag" data-en="dot gain" data-zh="网点扩大">dot gain</li><li class="ta-tag" data-en="effects" data-zh="效果">effects</li></ul></a></article></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="brand__seal"><img src="../assets/art/seal-inkstone.svg" alt="INKSTONE STUDIO" width="38" height="38"></span>
+          <span class="brand__text">
+            <span class="brand__name" data-en="INKSTONE" data-zh="墨印工坊">INKSTONE</span>
+            <span class="brand__sub" data-en="STUDIO · GUANGZHOU" data-zh="工坊 · 广州">STUDIO · GUANGZHOU</span>
+          </span>
+        </div>
+        <p class="footer__desc" data-en="A personal notebook of digital inkjet printing — UV flatbed, rotary, roll-to-roll and onepass machines built in Guangzhou, with the specs and brochures that actually matter." data-zh="数码喷墨设备的个人资料库 —— UV 平板、360° 圆柱、卷材与 Onepass，附真实参数与彩页，全部来自广州制造。">Digital inkjet printers designed and built in Guangzhou — UV flatbed, rotary, roll-to-roll, onepass and 3D. Seventeen years of printing craft, shipped to more than sixty countries.</p>
+        <div class="footer__social"></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Products" data-zh="产品">Products</p>
+        <div class="footer__links"><a href="../products/index.html" data-en="All products" data-zh="全部产品">All products</a>
+<a href="../products/index.html#cat-uv-flatbed" data-en="UV Flatbed Printers" data-zh="UV 平板打印机">UV Flatbed Printers</a>
+<a href="../products/index.html#cat-rotary" data-en="360° Rotary UV Printers" data-zh="360° 圆柱 UV 打印机">360° Rotary UV Printers</a>
+<a href="../products/index.html#cat-roll-to-roll" data-en="Roll-to-Roll &amp; UV DTF Printers" data-zh="卷材与 UV DTF 打印机">Roll-to-Roll &amp; UV DTF Printers</a>
+<a href="../products/index.html#cat-onepass" data-en="Onepass High-Speed Printers" data-zh="Onepass 高速打印机">Onepass High-Speed Printers</a></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Studio" data-zh="工坊">Studio</p>
+        <div class="footer__links"><a href="../company/index.html" data-en="About the studio" data-zh="关于本站">About the studio</a>
+<a href="../tech/index.html" data-en="Tech notes" data-zh="技术笔记">Tech notes</a>
+<a href="../troubleshooting/index.html" data-en="Troubleshooting" data-zh="故障速查">Troubleshooting</a>
+<a href="../materials/index.html" data-en="Materials matrix" data-zh="材料矩阵">Materials matrix</a>
+<a href="../company/index.html#technology" data-en="Technology" data-zh="技术内核">Technology</a>
+<a href="../company/index.html#factory" data-en="Factory" data-zh="工厂实拍">Factory</a>
+<a href="../downloads/index.html" data-en="Downloads" data-zh="资料下载">Downloads</a>
+<a href="../contact/index.html" data-en="Contact" data-zh="联系我们">Contact</a></div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h" data-en="Contact" data-zh="联系">Contact</p>
+        <div class="footer__links"><span class="footer__name">Jessie</span>
+<a href="tel:+8615920122366">+86 159 2012 2366</a>
+<span class="footer__hours" data-en="Mon–Sat 8:30am–6:00pm (GMT+8)" data-zh="周一至周六 8:30–18:00（北京时间）">Mon–Sat 8:30am–6:00pm (GMT+8)</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-en="© 2026 INKSTONE STUDIO · An independent studio in Guangzhou" data-zh="© 2026 墨印工坊 · 广州独立工作室">© 2026 INKSTONE STUDIO · An independent studio in Guangzhou</span>
+      <span class="footer__cn cn-deco" aria-hidden="true">墨 印 工 坊 · 广 州</span>
+      <span data-en="DAXIONG DESIGN" data-zh="大熊设计">大熊设计</span>
+    </div>
+  </div>
+</footer>
+<audio id="bg-music" src="../assets/audio/guqin-loop.mp3" loop preload="none"></audio>
+<button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Background music" data-aria-en="Background music" data-aria-zh="背景音乐" title="背景音乐 / Background music">
+  <span class="music-toggle__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V6l10-2v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="6.5" cy="18" r="2.6" stroke="currentColor" stroke-width="1.5"/><circle cx="16.5" cy="16" r="2.6" stroke="currentColor" stroke-width="1.5"/></svg>
+  </span>
+  <span class="music-toggle__label" data-en="Music" data-zh="轻音乐">Music</span>
+</button>
+
+<button class="to-top" type="button" id="to-top" aria-label="Back to top" data-aria-en="Back to top" data-aria-zh="回到顶部">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/tech.js"></script>
+
+
+
+</body>
+</html>

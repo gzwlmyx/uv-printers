@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t6">
+  <title id="t6">UV foil stamping layer sequence</title>
+  <defs>
+    <pattern id="g6" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B1A17" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <marker id="a6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#A6322A"/>
+    </marker>
+    <linearGradient id="foil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C9B382"/>
+      <stop offset=".5" stop-color="#7A5C26"/>
+      <stop offset="1" stop-color="#C9B382"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="440" fill="url(#g6)"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="11" fill="#45403A">
+
+    <!-- 4 steps -->
+    <g transform="translate(40,60)">
+      <!-- step 1 substrate + adhesive -->
+      <g>
+        <text x="0" y="0" font-size="10" letter-spacing="1.4" fill="#7A7267">1 · PRINT UV ADHESIVE</text>
+        <rect x="0" y="24" width="300" height="20" fill="#EBE2D1" stroke="#1B1A17" stroke-width="1.3"/>
+        <path d="M40 24h120l-20 20H40z" fill="#2F5D62" fill-opacity=".45" stroke="#2F5D62" stroke-width="1"/>
+        <text x="0" y="68" font-size="10" fill="#7A7267">adhesive stays tacky — no full cure</text>
+      </g>
+      <!-- step 2 foil applied -->
+      <g transform="translate(0,110)">
+        <text x="0" y="0" font-size="10" letter-spacing="1.4" fill="#7A7267">2 · FOIL ON TOP, ROLLER PASS</text>
+        <rect x="0" y="24" width="300" height="20" fill="#EBE2D1" stroke="#1B1A17" stroke-width="1.3"/>
+        <path d="M40 24h120l-20 20H40z" fill="#2F5D62" fill-opacity=".35"/>
+        <rect x="30" y="22" width="160" height="6" fill="url(#foil)" stroke="#7A5C26" stroke-width=".8"/>
+        <circle cx="210" cy="20" r="14" fill="#F9F5EC" stroke="#1B1A17" stroke-width="1.2"/>
+        <path d="M196 20h28M210 6v28" stroke="#1B1A17" stroke-width=".8" stroke-opacity=".5"/>
+        <path d="M238 20h42" stroke="#A6322A" stroke-width="1.3" marker-end="url(#a6)"/>
+        <text x="0" y="68" font-size="10" fill="#7A7267">heat + pressure release the metal layer</text>
+      </g>
+      <!-- step 3 peel -->
+      <g transform="translate(0,220)">
+        <text x="0" y="0" font-size="10" letter-spacing="1.4" fill="#7A7267">3 · PEEL — FOIL STAYS ON ADHESIVE</text>
+        <rect x="0" y="24" width="300" height="20" fill="#EBE2D1" stroke="#1B1A17" stroke-width="1.3"/>
+        <path d="M40 24h120l-20 20H40z" fill="url(#foil)" stroke="#7A5C26" stroke-width=".9"/>
+        <path d="M160 14l80-10" stroke="#C9B382" stroke-width="4" stroke-linecap="round"/>
+        <text x="0" y="68" font-size="10" fill="#7A7267">the film carrier is discarded</text>
+      </g>
+    </g>
+
+    <!-- right: failure modes -->
+    <g transform="translate(430,80)">
+      <text x="0" y="0" font-size="10" letter-spacing="1.4" fill="#7A7267">WHAT GOES WRONG</text>
+      <g font-size="11">
+        <text x="0" y="28" fill="#A6322A">· foil does not stick</text>
+        <text x="14" y="46" fill="#45403A">adhesive under-cured or too thin</text>
+        <text x="0" y="76" fill="#A6322A">· foil tears at the edges</text>
+        <text x="14" y="94" fill="#45403A">too much pressure or heat</text>
+        <text x="0" y="124" fill="#A6322A">· patchy, missing detail</text>
+        <text x="14" y="142" fill="#45403A">adhesive too thin / nozzle dropout</text>
+        <text x="0" y="172" fill="#A6322A">· foil lifts after packing</text>
+        <text x="14" y="190" fill="#45403A">adhesive over-cured before transfer</text>
+      </g>
+      <g stroke="#2F5D62" stroke-width="1" fill="none">
+        <path d="M0 210h300"/>
+      </g>
+      <text x="0" y="232" font-size="10" fill="#7A7267">Record roller temperature and pass speed</text>
+      <text x="0" y="250" font-size="10" fill="#7A7267">on every job — foil is the least forgiving.</text>
+    </g>
+
+    <text x="40" y="424" font-size="10" letter-spacing="1.6" fill="#7A7267">FIG. 06 · UV FOIL IS A THREE-STEP PROCESS WITH ONE CHANCE TO BOND</text>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t4">
+  <title id="t4">Surface energy, contact angle and primer</title>
+  <defs>
+    <pattern id="g4" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B1A17" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <marker id="a4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#A6322A"/>
+    </marker>
+  </defs>
+  <rect width="800" height="440" fill="url(#g4)"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="11" fill="#45403A">
+
+    <!-- low surface energy -->
+    <g transform="translate(60,70)">
+      <text x="0" y="-18" font-size="10" letter-spacing="1.4" fill="#7A7267">LOW SURFACE ENERGY · PTFE, PP, OILY METAL</text>
+      <rect x="0" y="120" width="290" height="16" fill="#EBE2D1" stroke="#1B1A17" stroke-width="1.3"/>
+      <path d="M145 120c-22-8-38-22-38-34 0-12 17-18 38-18s38 6 38 18c0 12-16 26-38 34z" fill="#A6322A" fill-opacity=".5" stroke="#A6322A" stroke-width="1.2"/>
+      <path d="M107 86h76" stroke="#1B1A17" stroke-width="1" stroke-dasharray="3 4"/>
+      <path d="M107 86c26 0 38 10 38 34M183 86c-26 0-38 10-38 34" fill="none" stroke="#1B1A17" stroke-width="1"/>
+      <text x="86" y="112" font-size="10" fill="#A6322A">θ &gt; 90°</text>
+      <text x="0" y="168" font-size="10" fill="#7A7267">bonds weakly · needs primer or treatment</text>
+    </g>
+
+    <!-- high surface energy -->
+    <g transform="translate(440,70)">
+      <text x="0" y="-18" font-size="10" letter-spacing="1.4" fill="#7A7267">HIGH SURFACE ENERGY · CLEAN GLASS, ALU</text>
+      <rect x="0" y="120" width="290" height="16" fill="#EBE2D1" stroke="#1B1A17" stroke-width="1.3"/>
+      <path d="M145 120c-30-3-56-8-56-16 0-7 24-11 56-11s56 4 56 11c0 8-26 13-56 16z" fill="#2F5D62" fill-opacity=".5" stroke="#2F5D62" stroke-width="1.2"/>
+      <path d="M89 104h112" stroke="#1B1A17" stroke-width="1" stroke-dasharray="3 4"/>
+      <path d="M89 104c30 0 56 6 56 16M201 104c-30 0-56 6-56 16" fill="none" stroke="#1B1A17" stroke-width="1"/>
+      <text x="70" y="112" font-size="10" fill="#2F5D62">θ &lt; 30°</text>
+      <text x="0" y="168" font-size="10" fill="#7A7267">wets out · good mechanical key after cure</text>
+    </g>
+
+    <!-- primer cross section -->
+    <g transform="translate(60,290)">
+      <text x="0" y="0" font-size="10" letter-spacing="1.4" fill="#7A7267">WITH A PRIMER / ADHESION PROMOTER</text>
+      <g>
+        <rect x="0" y="20" width="570" height="20" fill="#A6322A" fill-opacity=".5" stroke="#A6322A" stroke-width="1.1"/>
+        <rect x="0" y="40" width="570" height="10" fill="#2F5D62" fill-opacity=".3" stroke="#2F5D62" stroke-width="1.1"/>
+        <rect x="0" y="50" width="570" height="18" fill="#EBE2D1" stroke="#1B1A17" stroke-width="1.2"/>
+      </g>
+      <text x="586" y="34" font-size="10" fill="#A6322A">ink</text>
+      <text x="586" y="49" font-size="10" fill="#2F5D62">primer</text>
+      <text x="586" y="64" font-size="10" fill="#45403A">substrate</text>
+      <g stroke="#1B1A17" stroke-width="1" stroke-dasharray="3 4" fill="none">
+        <path d="M-14 20v18M-14 50v18M-8 28h-12M-8 59h-12"/>
+      </g>
+      <text x="-28" y="44" font-size="10" fill="#7A7267" text-anchor="middle" transform="rotate(-90 -28 44)">1–5 μm</text>
+      <text x="0" y="96" font-size="10" fill="#7A7267">The primer is a bridge, not a glue: it raises surface energy and is cured before ink lands.</text>
+    </g>
+
+    <text x="60" y="428" font-size="10" letter-spacing="1.6" fill="#7A7267">FIG. 04 · IF A PRINT PEELS OFF, MEASURE THE SUBSTRATE BEFORE CHANGING THE INK</text>
+  </g>
+</svg>

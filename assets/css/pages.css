@@ -570,3 +570,6 @@ html[lang^="zh"] .hero h1 .accent { font-style: normal; }
   .music-toggle{width:42px;height:42px;padding:0;justify-content:center;border-radius:50%}
   .music-toggle__icon{width:18px;height:18px}
 }
+
+/* MUSIC-HIDE-MOBILE: keep the reading column clean on phones */
+@media (max-width:600px){.music-toggle{display:none !important}}
